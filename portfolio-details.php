@@ -147,12 +147,12 @@ $value = reset($portfolioItems);
 
         <div class="d-flex justify-content-between align-items-center">
           <h2>
-            <?php echo $Main[$G]['S']; ?>
+            <?php echo langText($Main[$G]['S']); ?>
           </h2>
           <ol>
             <li><a href="index.php"><?php echo langText($uiLabels['home']); ?></a></li>
             <li>
-              <?php echo $Main[$G]['S']; ?>
+              <?php echo langText($Main[$G]['S']); ?>
             </li>
           </ol>
         </div>
@@ -179,12 +179,12 @@ $value = reset($portfolioItems);
           <div class="portfolio-description">
             <ul dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>" class="m-5">
               <?php foreach ($item['description'] as $dis) { ?>
-                <li><?php echo $dis; ?></li>
+                <li><?php echo langText($dis); ?></li>
               <?php } ?>
             </ul>
           </div>
           <?php if (isset($item['dis']) && $item['dis'] != '') { ?>
-            <h6 class='text-center'><span class='border rounded border-success py-1 px-5' style='color:white ;  background-color: #043042 !important;'><?php echo $item['dis']; ?></span></h6>
+            <h6 class='text-center'><span class='border rounded border-success py-1 px-5' style='color:white ;  background-color: #043042 !important;'><?php echo langText($item['dis']); ?></span></h6>
           <?php }
           $first = false;
         } ?>
@@ -204,17 +204,17 @@ $value = reset($portfolioItems);
             </div>
             <div class="col-lg-4">
               <div class="portfolio-info">
-                <h3><?php echo $item['SD']; ?></h3>
+                <h3><?php echo langText($item['SD']); ?></h3>
                 <ul dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>">
                   <li><strong><?php echo langText($portfolioLabels['category']); ?></strong> : <?php echo $item['category']; ?></li>
-                  <li><strong><?php echo langText($portfolioLabels['description']); ?></strong> : <?php echo $item['SD']; ?></li>
+                  <li><strong><?php echo langText($portfolioLabels['description']); ?></strong> : <?php echo langText($item['SD']); ?></li>
                   <?php if (isset($statusTexts[$item['projectStatu']])) { ?>
                     <li><strong><?php echo langText($portfolioLabels['status']); ?></strong> : <?php echo langText($statusTexts[$item['projectStatu']]); ?></li>
                   <?php } elseif (isset($item['projectStatu']) && $item['projectStatu'] != '') { ?>
                     <li><strong><?php echo langText($portfolioLabels['status']); ?></strong> : <?php echo $item['projectStatu']; ?></li>
                   <?php } ?>
                   <?php if (isset($item['area']) && $item['area'] != '') { ?>
-                    <li><strong><?php echo langText($portfolioLabels['area']); ?></strong> : <?php echo $item['area']; ?></li>
+                    <li><strong><?php echo langText($portfolioLabels['area']); ?></strong> : <?php echo langText($item['area']); ?></li>
                   <?php } ?>
                 </ul>
               </div>

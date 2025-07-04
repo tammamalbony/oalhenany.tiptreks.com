@@ -147,9 +147,11 @@
         <div class="row skills-content">
 
           <div class="col-lg-6" data-aos="fade-up">
-            <?php foreach ($skills[1] as $skill => $percentage) {
+            <?php foreach ($skills[1] as $skill) {
+              $name = langText($skill['name']);
+              $percentage = $skill['value'];
               echo '<div class="progress">
-                      <span class="skill">' . $skill . ' <i class="val">' . $percentage . '%</i></span>
+                      <span class="skill">' . $name . ' <i class="val">' . $percentage . '%</i></span>
                         <div class="progress-bar-wrap">
                           <div class="progress-bar" role="progressbar" aria-valuenow="' . $percentage . '" aria-valuemin="0" aria-valuemax="100">
                           </div>
@@ -160,9 +162,11 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-            <?php foreach ($skills[2] as $skill => $percentage) {
+            <?php foreach ($skills[2] as $skill) {
+              $name = langText($skill['name']);
+              $percentage = $skill['value'];
               echo '<div class="progress">
-                      <span class="skill">' . $skill . ' <i class="val">' . $percentage . '%</i></span>
+                      <span class="skill">' . $name . ' <i class="val">' . $percentage . '%</i></span>
                         <div class="progress-bar-wrap">
                           <div class="progress-bar" role="progressbar" aria-valuenow="' . $percentage . '" aria-valuemin="0" aria-valuemax="100">
                           </div>
@@ -213,37 +217,38 @@
             <h3 class="resume-title"><?php echo langText($sectionTitles['education']); ?></h3>
             <?php
             foreach ($education as $item) {
-              echo '<div class="resume-item">
-                      <h4>' . $item["title"] . '</h4>
-                      <h5>' . $item["year"] . '</h5>
-                      <p><em>' . $item["university"] . '</em></p>
-                      <p>' . $item["description"] . '</p>
-                    </div>';
+              echo '<div class="resume-item">'
+                    . '<h4>' . langText($item["title"]) . '</h4>'
+                    . '<h5>' . $item["year"] . '</h5>'
+                    . '<p><em>' . langText($item["university"]) . '</em></p>'
+                    . '<p>' . langText($item["description"]) . '</p>'
+                  . '</div>';
             }
             ?>
             <h3 class="resume-title"><?php echo langText($sectionTitles['courses']); ?></h3>
             <?php
             foreach ($courses as $course) {
-              echo '<div class="resume-item">
-                      <h4>' . $course["title"] . '</h4>
-                      <h5>' . $course["date"] . '</h5>
-                      <p><em>' . $course["organization"] . '</em></p>
-                      <p>' . $course["description"] . '</p>
-                    </div>';
+              $desc = is_array($course["description"]) ? langText($course["description"]) : $course["description"];
+              echo '<div class="resume-item">'
+                      . '<h4>' . langText($course["title"]) . '</h4>'
+                      . '<h5>' . $course["date"] . '</h5>'
+                      . '<p><em>' . langText($course["organization"]) . '</em></p>'
+                      . '<p>' . $desc . '</p>'
+                    . '</div>';
             }
             ?>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title"><?php echo langText($sectionTitles['experience']); ?></h3>
             <?php foreach ($expersinces as $item) {
-              echo '<div class="resume-item">
-                            <h4>' . $item["location"] . '</h4>
-                            <h5>' . $item["date"] . '</h5>
-                            <p><em>' . $item["title"] . '</em></p>';
+              echo '<div class="resume-item">'
+                    . '<h4>' . langText($item["location"]) . '</h4>'
+                    . '<h5>' . langText($item["date"]) . '</h5>'
+                    . '<p><em>' . langText($item["title"]) . '</em></p>';
               if (!empty($item["description"])) {
-                echo '<ul dir="rtl">';
+                echo '<ul dir="' . ($lang === 'ar' ? 'rtl' : 'ltr') . '">';
                 foreach ($item["description"] as $desc) {
-                  echo '<li>' . $desc . '</li>';
+                  echo '<li>' . langText($desc) . '</li>';
                 }
                 echo '</ul>';
               }
@@ -284,7 +289,7 @@
                 <img src="<?php echo $rootlink ."/". $item['I'] . ".jpg" ; ?>" class="img-fluid" alt="">
                 <div class="card-body">
                   <h5 class="card-title">
-                    <?php echo $item['S']; ?>
+                    <?php echo langText($item['S']); ?>
                   </h5>
                   <p class="card-text"></p>
                   <p class="card-text"><small class="text-body-secondary"></small></p>
@@ -293,7 +298,7 @@
               <div class="portfolio-links ">
                 <a href="<?php echo $rootlink ."/". $item['I'] . " .jpg"; ?>" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" data-title="
-                  <?php echo $item['S'] ?>"><i class="bi bi-zoom-in"></i>
+                  <?php echo langText($item['S']); ?>"><i class="bi bi-zoom-in"></i>
                 </a>
                 <a href="portfolio-details.php?G=<?php echo $G; ?>" title="<?php echo langText($uiLabels['moreDetails']); ?>"><i
                     class="bx bx-link"></i></a>

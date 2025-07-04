@@ -447,7 +447,9 @@ $skills = [
     ]
 ];
 
-$expersinces = [
+
+$expersinces = 
+[
     [
         'location'    => ['en' => 'United Arab Emirates - Dubai', 'ar' => 'الإمارات العربية المتحدة - دبي'],
         'date'        => ['en' => 'March 2023 - Present',      'ar' => '3/2023 - الأن'],
@@ -533,7 +535,6 @@ $expersinces = [
         ]
     ]
 ];
-
 $services = [
     [
         'icon'        => 'bi-briefcase',
