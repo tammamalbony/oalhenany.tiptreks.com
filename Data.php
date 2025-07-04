@@ -2,6 +2,132 @@
 //$rootlink = "https://oalhenany.000webhostapp.com/1/";
 $rootlink = "./1";
 $im = "w%20";
+$names = [
+    'ar' => 'عمران الحيناني',
+    'en' => 'Omran Al Henany'
+];
+$heroItems = [
+    "مهندس زراعي",
+    "ماجستير في تصميم وتنسيق الحدائق",
+    "دكتوراه في تخطيط و تصميم المواقع العامة"
+];
+
+$visionPoints = [
+    "السعي الدائم لتطوير تقنيات وأساليب جديدة لتصميم وتنفيذ المشاريع الزراعية والمناظر الطبيعية المستدامة التي تحسن جودة الحياة في المدن وتوفر بيئة صحية وجميلة للمجتمعات المحلية. كما أريد تحديد المعايير الدولية لتصميم وتنفيذ المشاريع الزراعية المستدامة",
+    "وتطوير نظامي الخاص لتدريب المهنيين في هذا المجال وتوفير بيئة عمل محفزة للإبداع والإبتكار.",
+    "أسعى لتحسين جودة الحياة للمجتمعات المحلية ونشر الوعي بأهمية الزراعة المستدامة والمناظر الطبيعية في المدن .",
+    "ابتكار نظم زراعية حديثة توفر التكاليف وتحافظ على موارد الأرض. أريد الوصول إلى وضع قواعد صحيحة لتصميم كافة مواقع اللاندسكيب واستخدام النباتات المناسبة لكل منها وطرق الري الأنسب لتوفير تكاليف الصيانة الباهضة وزيادة الجمالية والفائدة البيئية منها."
+];
+
+$aboutHighlights = [
+    "مدرب في عدة محافظات سورية وفي الإمارات العربية المتحدة ( دبي)",
+    "مدير مكتب Land Experts لتصميم وتنفيذ كافة أعمال اللاندسكيب .",
+    "مهندس فني في شركة بدار للزراعة والتجارة للإشراف على المشاريع الزراعية وتسويق المستلزمات الزراعية."
+];
+
+$contactInfoLeft = [
+    ["icon" => "bi-wifi", "label" => "الموقع :", "href" => "http://oalhenany.com", "text" => "www.oalhenany.com"],
+    ["icon" => "bi-whatsapp", "label" => "واتس أب :", "href" => "https://wa.me/971581524939", "text" => "+971581524939", "ltr" => true],
+    ["icon" => "bi-telephone", "label" => "الموبايل :", "href" => "tel:00963994763404", "text" => "+963994763404", "ltr" => true],
+    ["icon" => "bi-map", "label" => "الإقامة :", "text" => "سوريا , دمشق"],
+    ["icon" => "bi-translate", "label" => "اللغة العربية :", "text" => "لغتي الأصلية"]
+];
+
+$contactInfoRight = [
+    ["icon" => "bi-chevron-left", "label" => "الميلاد :", "text" => "20/2/1991"],
+    ["icon" => "bi-chevron-left", "label" => "الجنس:", "text" => "ذكر"],
+    ["icon" => "bi-chevron-left", "label" => "البريد الإلكتروني:", "text" => "oalhenany@gmail.com"],
+    ["icon" => "bi-chevron-left", "label" => "العمل كمستقل:", "text" => "متوفر"],
+    ["icon" => "bi-chevron-left", "label" => " اللغة الإنكليزية :", "text" => "جيدة"]
+];
+
+$aboutConclusion = "يعتبر تحقيق الأهداف هي الخطوة الأساسية لتحديد الخطوات التي يجب اتخاذها لتحقيق رؤيتي.";
+
+$aboutEdu = [
+    ["icon" => "bi-mortarboard", "text" => "دكتوراه في الهندسة الزراعية باختصاص تخطيط وتصميم المناطق الخضراء في الأحياء السكنية باستخدام نظم المعلومات الجغرافية GIS"],
+    ["icon" => "bi-vector-pen", "text" => "ماجستير في تصميم وتنسيق الحدائق"],
+    ["icon" => "bi-book", "text" => "بكالوريوس في الهندسة الزراعية اختصاص علوم البستنة"]
+];
+
+$resumeIntroPoints = [
+    "خبرة في مجال تخطيط وتصميم المناطق الخضراء والفراغات العمرانية وتنفيذ التصميمات على أرض الوقع ومتابعة الأعمال والإشراف عليها.",
+    "تصميم وتنفيذ شبكات الري ووضع برامج زمنية لصيانة الحدائق العامة والخاصة وبرامج إدارة الحدائق.",
+    "خبرة تدريب عدة مجالات في الهندسة الزراعية والتنمية البيئية المستدامة."
+];
+
+$resumeHighlights = [
+    "ماجستير في تصميم الحدائق",
+    "مدرب معتمد ",
+    "وكيل شركة اليسر للإرتقاء العمراني  في السويداء",
+    "دراسة وإدارة مشاريع الفطر المحاري",
+    "مشرف على مشاريع عديدة في أغلب المحافظات السورية"
+];
+
+$sectionTitles = [
+    'vision' => 'الرؤية',
+    'facts' => 'أرقام و إحصائيات',
+    'skills' => 'المهارات',
+    'resume' => 'السيرة الذاتية',
+    'resumeSummary' => 'الملخص',
+    'education' => 'الدراسة',
+    'courses' => 'الدورات التدريبية',
+    'experience' => 'الخبرات',
+    'portfolio' => 'الأعمال',
+    'services' => 'معلومات عامة',
+    'goals' => 'الأهداف'
+];
+
+$sectionDescriptions = [
+    'facts' => 'توضح الأعمال و الإنجازات ',
+    'portfolio' => 'عينة من الأعمال الموثقة لتعكس جودة العمل و الدقة بالتنفيذ و الأسس المتبعة بالتخطيط <br>',
+    'goals' => 'يعتبر تحقيق الأهداف هي الخطوة الأساسية لتحديد الخطوات التي يجب اتخاذها لتحقيق رؤيتي'
+];
+
+$skillsIntro = [
+    'خبرة في تصميم مخططات اللاندسكيب باستخدام أحدث البرامج الهندسية المتخصصة وتنفيذ الأعمال والإشراف على متابعة العمل وإعداد دفاتر الشروط وجداول الكميات والمقايسة للمشروع وبرامج أعمال الصيانة.',
+    'خبرة في مجال دراسة وإدارة مشاريع الفطر المحاري.',
+    'دراسة المشاريع الهندسية وتصميم وتنفيذ كافة أعمال اللاندسكيب'
+];
+
+$portfolioLabels = [
+    'category' => 'الفئة',
+    'description' => 'الوصف',
+    'status' => 'الحالة',
+    'area' => 'المساحة التصميمية',
+    'all' => 'الكل'
+];
+
+$navItems = [
+    ["href" => "./#hero", "icon" => "bx bx-home", "label" => "الرئيسية"],
+    ["href" => "./#about", "icon" => "bx bx-user", "label" => "الرؤية"],
+    ["href" => "./#resume", "icon" => "bx bx-file-blank", "label" => "السيرة الذاتية"],
+    ["href" => "./#portfolio", "icon" => "bx bx-book-content", "label" => "الأعمال"],
+    ["href" => "./#services", "icon" => "bx bx-server", "label" => "الخدمات"]
+];
+function buildNav($items, $name) {
+    $html = '<div class="d-flex flex-column">';
+    $html .= '<div class="profile">';
+    $html .= '<img src="./Pro/profile.jpg" alt="" class="img-fluid rounded-circle">';
+    $html .= '<h1 class="text-light"><a href="index.php">' . $name . '</a></h1>';
+    $html .= '<div class="social-links mt-3 text-center">';
+    $html .= '<a href="https://wa.me/963994763404"><i class="bi bi-whatsapp"></i></a>';
+    $html .= '<a href="https://www.facebook.com/profile.php?id=100063954043789"><i class="bx bxl-facebook"></i></a>';
+    $html .= '<a href="https://m.me/omranalhenany"><i class="bi bi-messenger"></i></a>';
+    $html .= '<a href="mailto:oalhenany@gmail.com"><i class="bi bi-envelope-at"></i></a>';
+    $html .= '<a href="tel:+963994763404"><i class="bi bi-telephone"></i></a>';
+    $html .= '</div></div>';
+    $html .= '<nav id="navbar" class="nav-menu navbar"><ul>';
+    $first = true;
+    foreach ($items as $item) {
+        $active = $first ? ' active' : '';
+        $html .= '<li><a href="'.$item['href'].'" class="nav-link scrollto'.$active.'"><i class="'.$item['icon'].'"></i> <span>'.$item['label'].'</span></a></li>';
+        $first = false;
+    }
+    $html .= '</ul></nav><!-- .nav-menu --></div>';
+    return $html;
+}
+
+$nav = buildNav($navItems, $names['en']);
 $statusTexts = [
     'A' => "بعد",
     'B' => "قبل",
@@ -657,14 +783,15 @@ $counterData = [
     ],
 ];
 
-$head = '
+$description = implode(" ◦ ❖ ◦ ", $heroItems);
+$head = <<<HTML
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>عمران الحيناني</title>
-<meta name="description" content="مهندس زراعي ◦ ❖ ◦ ماجستير في تصميم وتنسيق الحدائق ◦ ❖ ◦ دكتوراه في تخطيط و تصميم المواقع العامة" />
-<meta property="og:title" content="Omran Al Henany" />
+<title>{$names['ar']}</title>
+<meta name="description" content="$description" />
+<meta property="og:title" content="{$names['en']}" />
 <meta property="og:url" content="https://www.oalhenany.com/" />
-<meta property="og:description" content="مهندس زراعي ◦ ❖ ◦ ماجستير في تصميم وتنسيق الحدائق ◦ ❖ ◦ دكتوراه في تخطيط و تصميم المواقع العامة" />
+<meta property="og:description" content="$description" />
 <meta property="og:image" content="https://oalhenany.com/assets/img/bg.png" />
 <link href="assets/img/favicon.png" rel="icon">
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -677,7 +804,7 @@ $head = '
 <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" >
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/userx.css" rel="stylesheet">
-';
+HTML;
 
 $end = '
 <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -691,29 +818,6 @@ $end = '
 <script src="./assets/vendor/php-email-form/validate.js"></script>
 <script src="assets/js/mainx.js"></script>';
 
-$nav = '
-<div class="d-flex flex-column">
-    <div class="profile">
-        <img src="./Pro/profile.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.php">Omran Al Henany</a></h1>
-        <div class="social-links mt-3 text-center">
-            <a href="https://wa.me/963994763404"><i class="bi bi-whatsapp"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100063954043789"><i class="bx bxl-facebook"></i></a>
-            <a href="https://m.me/omranalhenany"><i class="bi bi-messenger"></i></i></a>
-            <a href="mailto:oalhenany@gmail.com"><i class="bi bi-envelope-at"></i></i></a>
-            <a href="tel:+963994763404"><i class="bi bi-telephone"></i></i></a>
-        </div>
-    </div>
-    <nav id="navbar" class="nav-menu navbar">
-        <ul>
-            <li><a href="./#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>الرئيسية</span></a></li>
-            <li><a href="./#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>الرؤية</span></a></li>
-            <li><a href="./#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i><span>السيرة الذاتية</span></a></li>
-            <li><a href="./#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>الأعمال</span></a></li>
-            <li><a href="./#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>الخدمات</span></a></li>
-        </ul>
-    </nav><!-- .nav-menu -->
-</div>';
 $footer = '<div class="container">
 <div class="copyright" dir="rtl">
   &copy; وكيل <strong><span> شركة رقي للتدريب الهندسي الاحترافي</span></strong>

@@ -207,18 +207,18 @@ $value = reset($portfolioItems);
                 <div class="portfolio-info">
                     <h3>' . $item['SD'] . '</h3>
                     <ul dir="rtl" >
-                        <li><strong>الفئة</strong> : ' . $item['category'] . '</li>
-                        <li><strong>الوصف</strong> : ' . $item['SD'] . '</li>
+                        <li><strong>' . $portfolioLabels['category'] . '</strong> : ' . $item['category'] . '</li>
+                        <li><strong>' . $portfolioLabels['description'] . '</strong> : ' . $item['SD'] . '</li>
                         ';
         if (isset($statusTexts[$item['projectStatu']])) {
-          echo "<li><strong>الحالة</strong> : " . $statusTexts[$item['projectStatu']] . "</li>";
+          echo "<li><strong>" . $portfolioLabels['status'] . "</strong> : " . $statusTexts[$item['projectStatu']] . "</li>";
         } else {
           if (isset($item['projectStatu']) && $item['projectStatu'] != "") {
-            echo "<li><strong>الحالة</strong> : " . $item['projectStatu'] . "</li>";
+            echo "<li><strong>" . $portfolioLabels['status'] . "</strong> : " . $item['projectStatu'] . "</li>";
           }
         }
         if (isset($item['area']) && $item['area'] != "") {
-          echo "<li><strong>المساحة التصميمية</strong> : " . $item['area'] . "</li>";
+          echo "<li><strong>" . $portfolioLabels['area'] . "</strong> : " . $item['area'] . "</li>";
         }
         echo '      </ul>
                 </div>
