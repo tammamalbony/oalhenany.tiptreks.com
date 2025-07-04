@@ -1,4 +1,10 @@
 <?php
+
+$footer_data = [
+    'copyright' => 'وكيل <strong><span> شركة رقي للتدريب الهندسي الاحترافي</span></strong>',
+    'credits' => 'مؤسسة اليسر <a href="http://www.alyousser.com/">للارتقاء الهندسي</a>',
+    'note' => 'الوثائق والثبوتيات جاهزة عند الطلب لكافة الأعمال'
+];
 $names = [
     'ar' => 'عمران الحيناني',
     'en' => 'Omran Al Henany'

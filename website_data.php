@@ -170,15 +170,10 @@ $end = '
 <script src="./assets/vendor/php-email-form/validate.js"></script>
 <script src="assets/js/mainx.js"></script>';
 
-$footer = '<div class="container">
-<div class="copyright" dir="rtl">
-  &copy; وكيل <strong><span> شركة رقي للتدريب الهندسي الاحترافي</span></strong>
-</div>
-<div class="credits" dir="rtl">
-  مؤسسة اليسر <a href="http://www.alyousser.com/">للارتقاء الهندسي</a>
-</div>
-<hr class="mx-2">
-<h6 class="text-center text-success">الوثائق والثبوتيات جاهزة عند الطلب لكافة الأعمال</h6>
-
-</div>';
+$footer = '<div class="container">'
+    . '<div class="copyright" dir="rtl">&copy; ' . $footer_data['copyright'] . '</div>'
+    . '<div class="credits" dir="rtl">' . $footer_data['credits'] . '</div>'
+    . '<hr class="mx-2">'
+    . '<h6 class="text-center text-success">' . $footer_data['note'] . '</h6>'
+    . '</div>';
 ?>
