@@ -63,6 +63,13 @@ $resumeHighlights = [
     "مشرف على مشاريع عديدة في أغلب المحافظات السورية"
 ];
 
+$resumeNationality = 'عربي سوري';
+
+$uiLabels = [
+    'home' => 'Home',
+    'moreDetails' => 'More Details'
+];
+
 $sectionTitles = [
     'vision' => 'الرؤية',
     'facts' => 'أرقام و إحصائيات',

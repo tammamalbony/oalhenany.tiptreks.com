@@ -202,7 +202,7 @@
             <h3 class="resume-title"><?php echo $sectionTitles['resumeSummary']; ?></h3>
             <div class="resume-item pb-0">
               <h4><?php echo $names['ar']; ?> </h4>
-              <p><em>عربي سوري</em></p>
+              <p><em><?php echo $resumeNationality; ?></em></p>
               <ul>
                 <?php foreach ($resumeHighlights as $item) { ?>
                   <li><?php echo $item; ?></li>
@@ -295,7 +295,7 @@
                   class="portfolio-lightbox" data-title="
                   <?php echo $item['S'] ?>"><i class="bi bi-zoom-in"></i>
                 </a>
-                <a href="portfolio-details.php?G=<?php echo $G; ?>" title="More Details"><i
+                <a href="portfolio-details.php?G=<?php echo $G; ?>" title="<?php echo $uiLabels['moreDetails']; ?>"><i
                     class="bx bx-link"></i></a>
               </div>
             </div>

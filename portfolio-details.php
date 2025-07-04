@@ -147,7 +147,7 @@ $value = reset($portfolioItems);
             <?php echo $Main[$G]['S']; ?>
           </h2>
           <ol>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="index.php"><?php echo $uiLabels['home']; ?></a></li>
             <li>
               <?php echo $Main[$G]['S']; ?>
             </li>
