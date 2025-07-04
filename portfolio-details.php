@@ -1,4 +1,7 @@
-<?php require_once "config.php"; require_once "user_data.php"; require_once "website_data.php"; ?>
+<?php
+require_once "config.php";
+require_once "user_data.php";
+require_once "website_data.php";
 
 $G = 0;
 
