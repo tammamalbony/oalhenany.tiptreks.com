@@ -36,7 +36,6 @@ $navItems = [
     ['href' => './#about', 'icon' => 'bx bx-user', 'label' => ['en' => '', 'ar' => 'الرؤية']],
     ['href' => './#resume', 'icon' => 'bx bx-file-blank', 'label' => ['en' => '', 'ar' => 'السيرة الذاتية']],
     ['href' => './#portfolio', 'icon' => 'bx bx-book-content', 'label' => ['en' => '', 'ar' => 'الأعمال']],
-    ['href' => './#services', 'icon' => 'bx bx-server', 'label' => ['en' => '', 'ar' => 'الخدمات']],
 ];
 function buildNav($items, $name) {
     $html = '<div class="d-flex flex-column">';
@@ -57,6 +56,8 @@ function buildNav($items, $name) {
         $html .= '<li><a href="'.$item['href'].'" class="nav-link scrollto'.$active.'"><i class="'.$item['icon'].'"></i> <span>'.langText($item['label']).'</span></a></li>';
         $first = false;
     }
+    $switch = ($GLOBALS['lang'] === 'ar') ? 'EN' : 'ع';
+    $html .= '<li><button class="btn btn-success lang-switch-btn">'.$switch.'</button></li>';
     $html .= '</ul></nav><!-- .nav-menu --></div>';
     return $html;
 }

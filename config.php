@@ -55,4 +55,12 @@ $Cats = [
         'dis' => ['en' => '', 'ar' => 'فعاليات'],
     ],
 ];
+
+// Mapping used for Isotope filters
+$catFilters = [
+    1 => 'work',
+    2 => 'project',
+    3 => 'course',
+    4 => 'view'
+];
 ?>

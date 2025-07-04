@@ -268,9 +268,9 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active"><?php echo langText($portfolioLabels['all']); ?></li>
-              <?php foreach ($Cats as $cat => $catname) { 
-              echo "<li data-filter='.filter-".$catname["en"]."'>".$catname["dis"]."</li>";
-             } ?>
+              <?php foreach ($Cats as $cat => $catname) { ?>
+                <li data-filter='.filter-<?php echo $catFilters[$cat]; ?>'><?php echo langText($catname['dis']); ?></li>
+              <?php } ?>
             </ul>
           </div>
         </div>
@@ -380,15 +380,17 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <div id="lang-switch" class="position-fixed bottom-0 <?php echo $lang === 'ar' ? 'start-0' : 'end-0'; ?> m-3">
-    <button class="btn btn-success rounded-circle" id="switch-lang-btn">
+    <button class="btn btn-success rounded-circle lang-switch-btn" id="switch-lang-btn">
       <?php echo $lang === 'ar' ? 'EN' : 'ع'; ?>
     </button>
   </div>
   <script>
-    document.getElementById('switch-lang-btn').addEventListener('click', function () {
-      var newLang = '<?php echo $lang; ?>' === 'ar' ? 'en' : 'ar';
-      document.cookie = 'lang=' + newLang + '; path=/; max-age=31536000';
-      location.reload();
+    document.querySelectorAll('.lang-switch-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var newLang = '<?php echo $lang; ?>' === 'ar' ? 'en' : 'ar';
+        document.cookie = 'lang=' + newLang + '; path=/; max-age=31536000';
+        location.reload();
+      });
     });
   </script>
 
