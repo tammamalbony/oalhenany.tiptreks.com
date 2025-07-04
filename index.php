@@ -60,10 +60,6 @@
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
 
-            <!-- <h3 class="text-center">دكتوراه في تخطيط و تصميم المواقع العامة &amp; بكالوريوس في الهندسة الزراعية اختصاص
-              علوم البستنة
-              &amp; ماجستير في تصميم
-              وتنسيق الحدائق</h3> -->
             <ul class="fst-italic" dir="rtl">
               <?php foreach ($aboutHighlights as $h) { ?>
                 <li> &#9679; <?php echo $h; ?></li>
