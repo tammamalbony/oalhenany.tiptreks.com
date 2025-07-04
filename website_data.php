@@ -171,9 +171,10 @@ $end = '
 <script src="assets/js/mainx.js"></script>';
 
 $footer = '<div class="container">'
-    . '<div class="copyright" dir="rtl">&copy; ' . $footer_data['copyright'] . '</div>'
-    . '<div class="credits" dir="rtl">' . $footer_data['credits'] . '</div>'
+    . '<div class="copyright" dir="rtl">&copy; '
+    . langText($footer_data['copyright']) . '</div>'
+    . '<div class="credits" dir="rtl">' . langText($footer_data['credits']) . '</div>'
     . '<hr class="mx-2">'
-    . '<h6 class="text-center text-success">' . $footer_data['note'] . '</h6>'
+    . '<h6 class="text-center text-success">' . langText($footer_data['note']) . '</h6>'
     . '</div>';
 ?>
