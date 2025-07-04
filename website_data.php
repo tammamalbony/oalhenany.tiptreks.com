@@ -1,42 +1,53 @@
 <?php
 $uiLabels = [
-    'home' => ['en' => '', 'ar' => 'الرئيسية'],
-    'moreDetails' => ['en' => '', 'ar' => 'المزيد من التفاصيل'],
+    'home'        => ['en' => 'Home',          'ar' => 'الرئيسية'],
+    'moreDetails' => ['en' => 'More Details', 'ar' => 'المزيد من التفاصيل'],
 ];
 
 $sectionTitles = [
-    'vision' => ['en' => '', 'ar' => 'الرؤية'],
-    'facts' => ['en' => '', 'ar' => 'أرقام و إحصائيات'],
-    'skills' => ['en' => '', 'ar' => 'المهارات'],
-    'resume' => ['en' => '', 'ar' => 'السيرة الذاتية'],
-    'resumeSummary' => ['en' => '', 'ar' => 'الملخص'],
-    'education' => ['en' => '', 'ar' => 'الدراسة'],
-    'courses' => ['en' => '', 'ar' => 'الدورات التدريبية'],
-    'experience' => ['en' => '', 'ar' => 'الخبرات'],
-    'portfolio' => ['en' => '', 'ar' => 'الأعمال'],
-    'services' => ['en' => '', 'ar' => 'معلومات عامة'],
-    'goals' => ['en' => '', 'ar' => 'الأهداف'],
+    'vision'        => ['en' => 'Vision',               'ar' => 'الرؤية'],
+    'facts'         => ['en' => 'Facts & Statistics',  'ar' => 'أرقام و إحصائيات'],
+    'skills'        => ['en' => 'Skills',               'ar' => 'المهارات'],
+    'resume'        => ['en' => 'Resume',               'ar' => 'السيرة الذاتية'],
+    'resumeSummary' => ['en' => 'Summary',              'ar' => 'الملخص'],
+    'education'     => ['en' => 'Education',            'ar' => 'الدراسة'],
+    'courses'       => ['en' => 'Training Courses',     'ar' => 'الدورات التدريبية'],
+    'experience'    => ['en' => 'Experience',           'ar' => 'الخبرات'],
+    'portfolio'     => ['en' => 'Portfolio',            'ar' => 'الأعمال'],
+    'services'      => ['en' => 'General Info',         'ar' => 'معلومات عامة'],
+    'goals'         => ['en' => 'Goals',                'ar' => 'الأهداف'],
 ];
 
 $sectionDescriptions = [
-    'facts' => ['en' => '', 'ar' => 'توضح الأعمال و الإنجازات '],
-    'portfolio' => ['en' => '', 'ar' => 'عينة من الأعمال الموثقة لتعكس جودة العمل و الدقة بالتنفيذ و الأسس المتبعة بالتخطيط <br>'],
-    'goals' => ['en' => '', 'ar' => 'يعتبر تحقيق الأهداف هي الخطوة الأساسية لتحديد الخطوات التي يجب اتخاذها لتحقيق رؤيتي'],
+    'facts'     => [
+        'en' => 'Shows work and achievements',
+        'ar' => 'توضح الأعمال و الإنجازات '
+    ],
+    'portfolio' => [
+        'en' => 'A sample of documented works reflecting quality, precision in execution, and the planning principles followed.<br>',
+        'ar' => 'عينة من الأعمال الموثقة لتعكس جودة العمل و الدقة بالتنفيذ و الأسس المتبعة بالتخطيط <br>'
+    ],
+    'goals'     => [
+        'en' => 'Achieving goals is the fundamental step in determining the steps needed to realize my vision',
+        'ar' => 'يعتبر تحقيق الأهداف هي الخطوة الأساسية لتحديد الخطوات التي يجب اتخاذها لتحقيق رؤيتي'
+    ],
 ];
+
 $portfolioLabels = [
-    'category' => ['en' => '', 'ar' => 'الفئة'],
-    'description' => ['en' => '', 'ar' => 'الوصف'],
-    'status' => ['en' => '', 'ar' => 'الحالة'],
-    'area' => ['en' => '', 'ar' => 'المساحة التصميمية'],
-    'all' => ['en' => '', 'ar' => 'الكل'],
+    'category'    => ['en' => 'Category',     'ar' => 'الفئة'],
+    'description' => ['en' => 'Description',  'ar' => 'الوصف'],
+    'status'      => ['en' => 'Status',       'ar' => 'الحالة'],
+    'area'        => ['en' => 'Design Area',  'ar' => 'المساحة التصميمية'],
+    'all'         => ['en' => 'All',          'ar' => 'الكل'],
 ];
 
 $navItems = [
-    ['href' => './#hero', 'icon' => 'bx bx-home', 'label' => ['en' => '', 'ar' => 'الرئيسية']],
-    ['href' => './#about', 'icon' => 'bx bx-user', 'label' => ['en' => '', 'ar' => 'الرؤية']],
-    ['href' => './#resume', 'icon' => 'bx bx-file-blank', 'label' => ['en' => '', 'ar' => 'السيرة الذاتية']],
-    ['href' => './#portfolio', 'icon' => 'bx bx-book-content', 'label' => ['en' => '', 'ar' => 'الأعمال']],
+    ['href' => './#hero',      'icon' => 'bx bx-home',         'label' => ['en' => 'Home',      'ar' => 'الرئيسية']],
+    ['href' => './#about',     'icon' => 'bx bx-user',         'label' => ['en' => 'Vision',    'ar' => 'الرؤية']],
+    ['href' => './#resume',    'icon' => 'bx bx-file-blank',   'label' => ['en' => 'Resume',    'ar' => 'السيرة الذاتية']],
+    ['href' => './#portfolio', 'icon' => 'bx bx-book-content', 'label' => ['en' => 'Portfolio', 'ar' => 'الأعمال']],
 ];
+
 function buildNav($items, $name) {
     $html = '<div class="d-flex flex-column">';
     $html .= '<div class="profile">';
@@ -64,80 +75,67 @@ function buildNav($items, $name) {
 
 $nav = buildNav($navItems, langText($names));
 
-
 /**
  * Adds a new portfolio item to the existing portfolio items array.
  *
  * @param array $portfolioItems   The current portfolio items array.
  * @param array $all              The root information for the  portfolio items.
- * @param int $images             The number of images associated with the new item.
- * @param string $category        The category of the new portfolio item.
- * @param string $SD              The name of the client or company.
- * @param string $projectDate     The date of the project.
- * @param string $projectStatu    The project status or identifier.
- * @param array $description     A description of the new portfolio item.
+ * @param int   $projectStatu     The project status or identifier.
+ * @param array $roots            The path in $all to the desired data.
  *
  * @return array                  The updated portfolio items array with the new item added.
  */
 function addPortfolioItem($portfolioItems, $projectStatu, $roots)
 {
-    global $Cats;
-    global $im;
-    global $all;
-    global $rootlink;
-    global $statusTexts;
+    global $Cats, $im, $all, $rootlink, $statusTexts;
     $dataarray = $all;
-    $dataroot = "";
-    $images = 0;
-    $area = "";
-    $dis = "";
+    $dataroot  = "";
+    $images    = 0;
+    $area      = "";
+    $dis       = "";
+
     foreach ($roots as $root) {
         $dataarray = $dataarray[$root];
-        $dataroot = $dataroot . "/" . $root;
+        $dataroot .= "/" . $root;
     }
-    if ($projectStatu == "") {
-        $images = $dataarray["E"];
+
+    if ($projectStatu === "") {
+        $images   = $dataarray["E"];
         $dataroot = $rootlink . $dataroot . "/" . $im;
-    } else if (isset($statusTexts[$projectStatu])) {
-        $images = $dataarray[$projectStatu];
+    } elseif (isset($statusTexts[$projectStatu])) {
+        $images   = $dataarray[$projectStatu];
         $dataroot = $rootlink . $dataroot . "/" . $projectStatu . "/" . $im;
     } else {
-        echo "<script> alert('else of statu')</script>";
+        echo "<script>alert('Unexpected project status')</script>";
     }
-    if(isset($dataarray['Area'])){
+
+    if (isset($dataarray['Area'])) {
         $area = $dataarray['Area'];
     }
-    if(isset($dataarray['Dis'])){
+    if (isset($dataarray['Dis'])) {
         $dis = $dataarray['Dis'];
     }
+
     $newItem = [
-        'images' => $images,
+        'images'       => $images,
         'projectStatu' => $projectStatu,
-        'description' => $dataarray['L'],
-        'root' => $dataroot,
-        'SD' => $dataarray['S'],
-        'category' => langText($Cats[$roots[0]]),
-        'area' => $area,
-        'dis' => $dis
+        'description'  => $dataarray['L'],
+        'root'         => $dataroot,
+        'SD'           => $dataarray['S'],
+        'category'     => langText($Cats[$roots[0]]),
+        'area'         => $area,
+        'dis'          => $dis,
     ];
-    /*
-   'root' => $root,
-      'images' => $images,
-      'category' => $category,
-      
-      'projectDate' => $projectDate,
-     
-      'description' => $description,
-    */
-    // Add the new item to a copy of the portfolio
+
     $updatedPortfolioItems = $portfolioItems;
     $updatedPortfolioItems[] = $newItem;
 
     return $updatedPortfolioItems;
 }
-$description = implode(" ◦ ❖ ◦ ", array_map('langText', $heroItems));
-$pageTitle = langText($names);
-$head = <<<HTML
+
+$description  = implode(" ◦ ❖ ◦ ", array_map('langText', $heroItems));
+$pageTitle    = langText($names);
+$head         = <<<HTML
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>{$pageTitle}</title>
@@ -148,9 +146,10 @@ $head = <<<HTML
 <meta property="og:image" content="https://oalhenany.com/assets/img/bg.png" />
 <link href="assets/img/favicon.png" rel="icon">
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -162,7 +161,9 @@ HTML;
 $end = '
 <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
 <script src="./assets/vendor/aos/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 <script src="./assets/vendor/glightbox/js/glightbox.js"></script>
 <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -173,9 +174,9 @@ $end = '
 
 $footer = '<div class="container">'
     . '<div class="copyright" dir="rtl">&copy; '
-    . langText($footer_data['copyright']) . '</div>'
-    . '<div class="credits" dir="rtl">' . langText($footer_data['credits']) . '</div>'
+    . langText($GLOBALS['footer_data']['copyright']) . '</div>'
+    . '<div class="credits" dir="rtl">' . langText($GLOBALS['footer_data']['credits']) . '</div>'
     . '<hr class="mx-2">'
-    . '<h6 class="text-center text-success">' . langText($footer_data['note']) . '</h6>'
+    . '<h6 class="text-center text-success">' . langText($GLOBALS['footer_data']['note']) . '</h6>'
     . '</div>';
 ?>
