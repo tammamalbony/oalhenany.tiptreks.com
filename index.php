@@ -243,7 +243,7 @@
             <?php foreach ($expersinces as $item) {
               echo '<div class="resume-item">'
                     . '<h4>' . langText($item["location"]) . '</h4>'
-                    . '<h5>' . $item["date"] . '</h5>'
+                    . '<h5>' . langText($item["date"]) . '</h5>'
                     . '<p><em>' . langText($item["title"]) . '</em></p>';
               if (!empty($item["description"])) {
                 echo '<ul dir="' . ($lang === 'ar' ? 'rtl' : 'ltr') . '">';
@@ -289,7 +289,7 @@
                 <img src="<?php echo $rootlink ."/". $item['I'] . ".jpg" ; ?>" class="img-fluid" alt="">
                 <div class="card-body">
                   <h5 class="card-title">
-                    <?php echo $item['S']; ?>
+                    <?php echo langText($item['S']); ?>
                   </h5>
                   <p class="card-text"></p>
                   <p class="card-text"><small class="text-body-secondary"></small></p>
@@ -298,7 +298,7 @@
               <div class="portfolio-links ">
                 <a href="<?php echo $rootlink ."/". $item['I'] . " .jpg"; ?>" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" data-title="
-                  <?php echo $item['S'] ?>"><i class="bi bi-zoom-in"></i>
+                  <?php echo langText($item['S']); ?>"><i class="bi bi-zoom-in"></i>
                 </a>
                 <a href="portfolio-details.php?G=<?php echo $G; ?>" title="<?php echo langText($uiLabels['moreDetails']); ?>"><i
                     class="bx bx-link"></i></a>
