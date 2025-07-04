@@ -120,7 +120,7 @@ $value = reset($portfolioItems);
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang; ?>" dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>">
 
 <head>
   <?php echo $head; ?>
@@ -147,7 +147,7 @@ $value = reset($portfolioItems);
             <?php echo $Main[$G]['S']; ?>
           </h2>
           <ol>
-            <li><a href="index.php"><?php echo $uiLabels['home']; ?></a></li>
+            <li><a href="index.php"><?php echo langText($uiLabels['home']); ?></a></li>
             <li>
               <?php echo $Main[$G]['S']; ?>
             </li>
@@ -172,63 +172,53 @@ $value = reset($portfolioItems);
       <?php
       $first = true;
       foreach ($portfolioItems as $item) {
-        if ($first == true) {
-
-          echo '<div class="portfolio-description"> <ul dir="rtl"  class="m-5">';
-
-          foreach ($item['description'] as $dis) {
-            echo "<li>$dis</li>";
-          }
-
-          echo '</ul></div>';
-          if (isset($item['dis']) && $item['dis'] != "") {
-            echo "<h6 class='text-center '><span class='border rounded border-success py-1 px-5' style='color:white ;  background-color: #043042 !important;'>" . $item['dis'] . "</span></h6>";
-          }
+        if ($first) { ?>
+          <div class="portfolio-description">
+            <ul dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>" class="m-5">
+              <?php foreach ($item['description'] as $dis) { ?>
+                <li><?php echo $dis; ?></li>
+              <?php } ?>
+            </ul>
+          </div>
+          <?php if (isset($item['dis']) && $item['dis'] != '') { ?>
+            <h6 class='text-center'><span class='border rounded border-success py-1 px-5' style='color:white ;  background-color: #043042 !important;'><?php echo $item['dis']; ?></span></h6>
+          <?php }
           $first = false;
-        }
-        echo '<div class="container mb-5">
-        <div class="row gy-4">
+        } ?>
+        <div class="container mb-5">
+          <div class="row gy-4">
             <div class="col-lg-8">
-                <div class="portfolio-details-slider swiper">
-                    <div class="swiper-wrapper align-items-center">';
-
-        for ($i = 0; $i < $item['images']; $i++) {
-          $j = $i + 1;
-          echo '<div class="swiper-slide text-center" >
-                      <img src="' . $item['root'] . '(' . $j . ').jpg" alt="" class="img-fluid" style="max-height:50vh ;width:auto">
-                  </div>';
-        }
-        echo '</div>
-                    <div class="swiper-pagination"></div>
-                    
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <?php for ($i = 0; $i < $item['images']; $i++) { $j = $i + 1; ?>
+                    <div class="swiper-slide text-center">
+                      <img src="<?php echo $item['root'] . '(' . $j . ').jpg'; ?>" alt="" class="img-fluid" style="max-height:50vh ;width:auto">
+                    </div>
+                  <?php } ?>
                 </div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
             <div class="col-lg-4">
-                <div class="portfolio-info">
-                    <h3>' . $item['SD'] . '</h3>
-                    <ul dir="rtl" >
-                        <li><strong>' . $portfolioLabels['category'] . '</strong> : ' . $item['category'] . '</li>
-                        <li><strong>' . $portfolioLabels['description'] . '</strong> : ' . $item['SD'] . '</li>
-                        ';
-        if (isset($statusTexts[$item['projectStatu']])) {
-          echo "<li><strong>" . $portfolioLabels['status'] . "</strong> : " . $statusTexts[$item['projectStatu']] . "</li>";
-        } else {
-          if (isset($item['projectStatu']) && $item['projectStatu'] != "") {
-            echo "<li><strong>" . $portfolioLabels['status'] . "</strong> : " . $item['projectStatu'] . "</li>";
-          }
-        }
-        if (isset($item['area']) && $item['area'] != "") {
-          echo "<li><strong>" . $portfolioLabels['area'] . "</strong> : " . $item['area'] . "</li>";
-        }
-        echo '      </ul>
-                </div>
-                
+              <div class="portfolio-info">
+                <h3><?php echo $item['SD']; ?></h3>
+                <ul dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>">
+                  <li><strong><?php echo langText($portfolioLabels['category']); ?></strong> : <?php echo $item['category']; ?></li>
+                  <li><strong><?php echo langText($portfolioLabels['description']); ?></strong> : <?php echo $item['SD']; ?></li>
+                  <?php if (isset($statusTexts[$item['projectStatu']])) { ?>
+                    <li><strong><?php echo langText($portfolioLabels['status']); ?></strong> : <?php echo langText($statusTexts[$item['projectStatu']]); ?></li>
+                  <?php } elseif (isset($item['projectStatu']) && $item['projectStatu'] != '') { ?>
+                    <li><strong><?php echo langText($portfolioLabels['status']); ?></strong> : <?php echo $item['projectStatu']; ?></li>
+                  <?php } ?>
+                  <?php if (isset($item['area']) && $item['area'] != '') { ?>
+                    <li><strong><?php echo langText($portfolioLabels['area']); ?></strong> : <?php echo $item['area']; ?></li>
+                  <?php } ?>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-    </div>';
-      }
-
-      ?>
+      <?php } ?>
 
 
       </div>
@@ -243,6 +233,21 @@ $value = reset($portfolioItems);
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
+  <div id="lang-switch" class="position-fixed bottom-0 <?php echo $lang === 'ar' ? 'start-0' : 'end-0'; ?> m-3">
+    <button class="btn btn-success rounded-circle lang-switch-btn" id="switch-lang-btn">
+      <?php echo $lang === 'ar' ? 'EN' : 'ع'; ?>
+    </button>
+  </div>
+  <script>
+    document.querySelectorAll('.lang-switch-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var newLang = '<?php echo $lang; ?>' === 'ar' ? 'en' : 'ar';
+        document.cookie = 'lang=' + newLang + '; path=/; max-age=31536000';
+        location.reload();
+      });
+    });
+  </script>
 
   <!-- Vendor JS Files -->
   <?php echo $end; ?>

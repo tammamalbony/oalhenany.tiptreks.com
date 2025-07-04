@@ -1,42 +1,41 @@
 <?php
 $uiLabels = [
-    'home' => 'Home',
-    'moreDetails' => 'More Details'
+    'home' => ['en' => '', 'ar' => 'الرئيسية'],
+    'moreDetails' => ['en' => '', 'ar' => 'المزيد من التفاصيل'],
 ];
 
 $sectionTitles = [
-    'vision' => 'الرؤية',
-    'facts' => 'أرقام و إحصائيات',
-    'skills' => 'المهارات',
-    'resume' => 'السيرة الذاتية',
-    'resumeSummary' => 'الملخص',
-    'education' => 'الدراسة',
-    'courses' => 'الدورات التدريبية',
-    'experience' => 'الخبرات',
-    'portfolio' => 'الأعمال',
-    'services' => 'معلومات عامة',
-    'goals' => 'الأهداف'
+    'vision' => ['en' => '', 'ar' => 'الرؤية'],
+    'facts' => ['en' => '', 'ar' => 'أرقام و إحصائيات'],
+    'skills' => ['en' => '', 'ar' => 'المهارات'],
+    'resume' => ['en' => '', 'ar' => 'السيرة الذاتية'],
+    'resumeSummary' => ['en' => '', 'ar' => 'الملخص'],
+    'education' => ['en' => '', 'ar' => 'الدراسة'],
+    'courses' => ['en' => '', 'ar' => 'الدورات التدريبية'],
+    'experience' => ['en' => '', 'ar' => 'الخبرات'],
+    'portfolio' => ['en' => '', 'ar' => 'الأعمال'],
+    'services' => ['en' => '', 'ar' => 'معلومات عامة'],
+    'goals' => ['en' => '', 'ar' => 'الأهداف'],
 ];
 
 $sectionDescriptions = [
-    'facts' => 'توضح الأعمال و الإنجازات ',
-    'portfolio' => 'عينة من الأعمال الموثقة لتعكس جودة العمل و الدقة بالتنفيذ و الأسس المتبعة بالتخطيط <br>',
-    'goals' => 'يعتبر تحقيق الأهداف هي الخطوة الأساسية لتحديد الخطوات التي يجب اتخاذها لتحقيق رؤيتي'
+    'facts' => ['en' => '', 'ar' => 'توضح الأعمال و الإنجازات '],
+    'portfolio' => ['en' => '', 'ar' => 'عينة من الأعمال الموثقة لتعكس جودة العمل و الدقة بالتنفيذ و الأسس المتبعة بالتخطيط <br>'],
+    'goals' => ['en' => '', 'ar' => 'يعتبر تحقيق الأهداف هي الخطوة الأساسية لتحديد الخطوات التي يجب اتخاذها لتحقيق رؤيتي'],
 ];
 $portfolioLabels = [
-    'category' => 'الفئة',
-    'description' => 'الوصف',
-    'status' => 'الحالة',
-    'area' => 'المساحة التصميمية',
-    'all' => 'الكل'
+    'category' => ['en' => '', 'ar' => 'الفئة'],
+    'description' => ['en' => '', 'ar' => 'الوصف'],
+    'status' => ['en' => '', 'ar' => 'الحالة'],
+    'area' => ['en' => '', 'ar' => 'المساحة التصميمية'],
+    'all' => ['en' => '', 'ar' => 'الكل'],
 ];
 
 $navItems = [
-    ["href" => "./#hero", "icon" => "bx bx-home", "label" => "الرئيسية"],
-    ["href" => "./#about", "icon" => "bx bx-user", "label" => "الرؤية"],
-    ["href" => "./#resume", "icon" => "bx bx-file-blank", "label" => "السيرة الذاتية"],
-    ["href" => "./#portfolio", "icon" => "bx bx-book-content", "label" => "الأعمال"],
-    ["href" => "./#services", "icon" => "bx bx-server", "label" => "الخدمات"]
+    ['href' => './#hero', 'icon' => 'bx bx-home', 'label' => ['en' => '', 'ar' => 'الرئيسية']],
+    ['href' => './#about', 'icon' => 'bx bx-user', 'label' => ['en' => '', 'ar' => 'الرؤية']],
+    ['href' => './#resume', 'icon' => 'bx bx-file-blank', 'label' => ['en' => '', 'ar' => 'السيرة الذاتية']],
+    ['href' => './#portfolio', 'icon' => 'bx bx-book-content', 'label' => ['en' => '', 'ar' => 'الأعمال']],
 ];
 function buildNav($items, $name) {
     $html = '<div class="d-flex flex-column">';
@@ -54,15 +53,16 @@ function buildNav($items, $name) {
     $first = true;
     foreach ($items as $item) {
         $active = $first ? ' active' : '';
-        $html .= '<li><a href="'.$item['href'].'" class="nav-link scrollto'.$active.'"><i class="'.$item['icon'].'"></i> <span>'.$item['label'].'</span></a></li>';
+        $html .= '<li><a href="'.$item['href'].'" class="nav-link scrollto'.$active.'"><i class="'.$item['icon'].'"></i> <span>'.langText($item['label']).'</span></a></li>';
         $first = false;
     }
+    $switch = ($GLOBALS['lang'] === 'ar') ? 'EN' : 'ع';
+    $html .= '<li><a href="#" class="nav-link scrollto lang-switch-btn"><i class="bi bi-translate"></i> <span>'.$switch.'</span></a></li>';
     $html .= '</ul></nav><!-- .nav-menu --></div>';
     return $html;
 }
 
-$nav = buildNav($navItems, $names['en']);
-];
+$nav = buildNav($navItems, langText($names));
 
 
 /**
@@ -116,7 +116,7 @@ function addPortfolioItem($portfolioItems, $projectStatu, $roots)
         'description' => $dataarray['L'],
         'root' => $dataroot,
         'SD' => $dataarray['S'],
-        'category' => $Cats[$roots[0]]["ar"],
+        'category' => langText($Cats[$roots[0]]),
         'area' => $area,
         'dis' => $dis
     ];
@@ -135,13 +135,14 @@ function addPortfolioItem($portfolioItems, $projectStatu, $roots)
 
     return $updatedPortfolioItems;
 }
-$description = implode(" ◦ ❖ ◦ ", $heroItems);
+$description = implode(" ◦ ❖ ◦ ", array_map('langText', $heroItems));
+$pageTitle = langText($names);
 $head = <<<HTML
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>{$names['ar']}</title>
+<title>{$pageTitle}</title>
 <meta name="description" content="$description" />
-<meta property="og:title" content="{$names['en']}" />
+<meta property="og:title" content="{$pageTitle}" />
 <meta property="og:url" content="https://www.oalhenany.com/" />
 <meta property="og:description" content="$description" />
 <meta property="og:image" content="https://oalhenany.com/assets/img/bg.png" />
@@ -171,9 +172,10 @@ $end = '
 <script src="assets/js/mainx.js"></script>';
 
 $footer = '<div class="container">'
-    . '<div class="copyright" dir="rtl">&copy; ' . $footer_data['copyright'] . '</div>'
-    . '<div class="credits" dir="rtl">' . $footer_data['credits'] . '</div>'
+    . '<div class="copyright" dir="rtl">&copy; '
+    . langText($footer_data['copyright']) . '</div>'
+    . '<div class="credits" dir="rtl">' . langText($footer_data['credits']) . '</div>'
     . '<hr class="mx-2">'
-    . '<h6 class="text-center text-success">' . $footer_data['note'] . '</h6>'
+    . '<h6 class="text-center text-success">' . langText($footer_data['note']) . '</h6>'
     . '</div>';
 ?>
