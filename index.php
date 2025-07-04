@@ -16,9 +16,9 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center" style="">
     <div class="hero-container" data-aos="fade-in" dir="rtl">
-      <h1>عمران الحيناني</h1>
-      <p> <span class="typed" dir="rtl"
-          data-typed-items="مهندس زراعي , ماجستير في تصميم وتنسيق الحدائق , دكتوراه في تخطيط و تصميم المواقع العامة"></span>
+      <h1><?php echo $names['ar']; ?></h1>
+      <p>
+        <span class="typed" dir="rtl" data-typed-items="<?php echo implode(' , ', $heroItems); ?>"></span>
       </p>
     </div>
   </section><!-- End Hero -->
@@ -27,21 +27,11 @@
     <section id="about" class="about">
       <div class="container">
         <div class="section-title">
-          <h2>الرؤية</h2>
+          <h2><?php echo $sectionTitles['vision']; ?></h2>
           <div dir="rtl">
-            <i class="bi bi-caret-left-fill text-success"></i><span> السعي الدائم لتطوير تقنيات وأساليب جديدة لتصميم
-              وتنفيذ المشاريع الزراعية والمناظر الطبيعية
-              المستدامة التي تحسن جودة الحياة في المدن وتوفر بيئة صحية وجميلة للمجتمعات المحلية.
-              كما أريد تحديد المعايير الدولية لتصميم وتنفيذ المشاريع الزراعية المستدامة</span></br>
-            <i class="bi bi-caret-left-fill text-success"></i><span> وتطوير نظامي الخاص لتدريب المهنيين
-              في هذا المجال وتوفير بيئة عمل محفزة للإبداع والإبتكار.</span></br>
-            <i class="bi bi-caret-left-fill text-success"></i><span> أسعى لتحسين جودة الحياة للمجتمعات المحلية ونشر
-              الوعي بأهمية الزراعة المستدامة والمناظر الطبيعية في
-              المدن .</span></br>
-            <i class="bi bi-caret-left-fill text-success"></i><span> ابتكار نظم زراعية حديثة توفر التكاليف وتحافظ على
-              موارد الأرض.
-              أريد الوصول إلى وضع قواعد صحيحة لتصميم كافة مواقع اللاندسكيب واستخدام النباتات المناسبة لكل منها وطرق الري
-              الأنسب لتوفير تكاليف الصيانة الباهضة وزيادة الجمالية والفائدة البيئية منها.</span>
+            <?php foreach ($visionPoints as $v) { ?>
+              <i class="bi bi-caret-left-fill text-success"></i><span> <?php echo $v; ?></span></br>
+            <?php } ?>
           </div>
         </div>
         <div class="row">
@@ -61,56 +51,44 @@
                 border: #288008 solid 5px !important;
               }
             </style>
-            <h4><i class="bi bi-mortarboard mx-2 text-success"></i>دكتوراه في الهندسة الزراعية باختصاص تخطيط وتصميم
-              المناطق الخضراء في الأحياء السكنية باستخدام نظم
-              المعلومات الجغرافية GIS</h4>
-            <h4> <i class="bi bi-vector-pen mx-2 text-success"></i> ماجستير في تصميم وتنسيق الحدائق</h4>
-            <h4><i class="bi bi-book mx-2 text-success"></i> بكالوريوس في الهندسة الزراعية اختصاص علوم البستنة</h4>
+            <?php foreach ($aboutEdu as $item) { ?>
+              <h4><i class="bi <?php echo $item['icon']; ?> mx-2 text-success"></i><?php echo $item['text']; ?></h4>
+            <?php } ?>
           </div>
           <div class="col-lg-4" data-aos="fade-right">
             <img src="./Pro/profile.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
 
-            <!-- <h3 class="text-center">دكتوراه في تخطيط و تصميم المواقع العامة &amp; بكالوريوس في الهندسة الزراعية اختصاص
-              علوم البستنة
-              &amp; ماجستير في تصميم
-              وتنسيق الحدائق</h3> -->
             <ul class="fst-italic" dir="rtl">
-              <li> &#9679; مدرب في عدة محافظات سورية وفي الإمارات العربية المتحدة ( دبي)</li>
-              <li> &#9679; مدير مكتب Land Experts لتصميم وتنفيذ كافة أعمال اللاندسكيب .</li>
-              <li> &#9679; مهندس فني في شركة بدار للزراعة والتجارة للإشراف على المشاريع الزراعية وتسويق المستلزمات
-                الزراعية.</li>
+              <?php foreach ($aboutHighlights as $h) { ?>
+                <li> &#9679; <?php echo $h; ?></li>
+              <?php } ?>
             </ul>
             <div class="row">
               <div class="col-lg-6">
                 <ul dir="rtl">
-                  <li><i class="bi bi-wifi"></i> <strong>الموقع : </strong><a href="http://oalhenany.com"> <span>
-                        www.oalhenany.com</span></a>
-                  </li>
-                  <li><i class="bi bi-whatsapp"></i> <strong>واتس أب : </strong> <span dir="ltr"><a
-                        href="https://wa.me/971581524939">+971581524939</a></span></li>
-                  <li><i class="bi bi-telephone"></i> <strong>الموبايل : </strong> <span dir="ltr"><a
-                        href="tel:00963994763404">+963994763404</a></span></li>
-                  <li><i class="bi bi-map"></i> <strong>الإقامة :</strong> <span> سوريا , دمشق</span></li>
-                  <li><i class="bi bi-translate"></i> <strong>اللغة العربية :</strong> <span>لغتي الأصلية </span>
-                  </li>
+                  <?php foreach ($contactInfoLeft as $info) { ?>
+                    <li><i class="bi <?php echo $info['icon']; ?>"></i> <strong><?php echo $info['label']; ?></strong>
+                      <?php if(isset($info['href'])) echo '<a href="'.$info['href'].'">'; ?>
+                      <span<?php if(isset($info['ltr'])) echo ' dir="ltr"'; ?>><?php echo $info['text']; ?></span>
+                      <?php if(isset($info['href'])) echo '</a>'; ?>
+                    </li>
+                  <?php } ?>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul dir="rtl">
-                  <li><i class="bi bi-chevron-left"></i> <strong>الميلاد : </strong> <span> 20/2/1991</span></li>
-                  <li><i class="bi bi-chevron-left"></i> <strong>الجنس:</strong> <span>ذكر</span></li>
-                  <li><i class="bi bi-chevron-left"></i> <strong>البريد الإلكتروني:</strong>
-                    <span>oalhenany@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-left"></i> <strong>العمل كمستقل:</strong> <span>متوفر</span></li>
-                  <li><i class="bi bi-chevron-left"></i> <strong> اللغة الإنكليزية :</strong> <span>جيدة </span></li>
+                  <?php foreach ($contactInfoRight as $info) { ?>
+                    <li><i class="bi <?php echo $info['icon']; ?>"></i> <strong><?php echo $info['label']; ?></strong>
+                      <span><?php echo $info['text']; ?></span>
+                    </li>
+                  <?php } ?>
                 </ul>
               </div>
             </div>
             <p dir="rtl">
-              يعتبر تحقيق الأهداف هي الخطوة الأساسية لتحديد الخطوات التي يجب اتخاذها لتحقيق رؤيتي.
+              <?php echo $aboutConclusion; ?>
             </p>
           </div>
         </div>
@@ -121,8 +99,8 @@
     <section id="facts" class="facts">
       <div class="container">
         <div class="section-title">
-          <h2>أرقام و إحصائيات</h2>
-          <p>توضح الأعمال و الإنجازات </p>
+          <h2><?php echo $sectionTitles['facts']; ?></h2>
+          <p><?php echo $sectionDescriptions['facts']; ?></p>
         </div>
         <div class="row no-gutters">
           <?php foreach ($counterData as $item) {
@@ -151,14 +129,13 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h2>المهارات</h2>
+                <h2><?php echo $sectionTitles['skills']; ?></h2>
               </div>
               <div class="col-md-8">
                 <ul dir="rtl">
-                  <li>خبرة في تصميم مخططات اللاندسكيب باستخدام أحدث البرامج الهندسية المتخصصة وتنفيذ الأعمال والإشراف
-                    على متابعة العمل وإعداد دفاتر الشروط وجداول الكميات والمقايسة للمشروع وبرامج أعمال الصيانة.</li>
-                  <li> خبرة في مجال دراسة وإدارة مشاريع الفطر المحاري.</li>
-                  <li> دراسة المشاريع الهندسية وتصميم وتنفيذ كافة أعمال اللاندسكيب</li>
+                  <?php foreach ($skillsIntro as $line) { ?>
+                    <li><?php echo $line; ?></li>
+                  <?php } ?>
                 </ul>
               </div>
             </div>
@@ -207,18 +184,13 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h2>السيرة الذاتية</h2>
+                <h2><?php echo $sectionTitles['resume']; ?></h2>
               </div>
               <div class="col-md-8">
                 <ul dir="rtl">
-                  <li>خبرة في مجال تخطيط وتصميم المناطق الخضراء والفراغات العمرانية وتنفيذ التصميمات على أرض الوقع
-                    ومتابعة الأعمال والإشراف عليها.
-                  </li>
-                  <li>تصميم وتنفيذ شبكات الري ووضع برامج زمنية لصيانة الحدائق العامة والخاصة وبرامج إدارة الحدائق.
-                  </li>
-                  <li>خبرة تدريب عدة مجالات في الهندسة الزراعية والتنمية البيئية المستدامة.
-                  </li>
-
+                  <?php foreach ($resumeIntroPoints as $p) { ?>
+                    <li><?php echo $p; ?></li>
+                  <?php } ?>
                 </ul>
               </div>
             </div>
@@ -227,20 +199,18 @@
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">الملخص</h3>
+            <h3 class="resume-title"><?php echo $sectionTitles['resumeSummary']; ?></h3>
             <div class="resume-item pb-0">
-              <h4>عمران الحيناني </h4>
-              <p><em>عربي سوري</em></p>
+              <h4><?php echo $names['ar']; ?> </h4>
+              <p><em><?php echo $resumeNationality; ?></em></p>
               <ul>
-                <li>ماجستير في تصميم الحدائق</li>
-                <li>مدرب معتمد </li>
-                <li>وكيل شركة اليسر للإرتقاء العمراني  في السويداء</li>
-                <li>دراسة وإدارة مشاريع الفطر المحاري</li>
-                <li>مشرف على مشاريع عديدة في أغلب المحافظات السورية</li>
+                <?php foreach ($resumeHighlights as $item) { ?>
+                  <li><?php echo $item; ?></li>
+                <?php } ?>
               </ul>
             </div>
 
-            <h3 class="resume-title">الدراسة</h3>
+            <h3 class="resume-title"><?php echo $sectionTitles['education']; ?></h3>
             <?php
             foreach ($education as $item) {
               echo '<div class="resume-item">
@@ -251,7 +221,7 @@
                     </div>';
             }
             ?>
-            <h3 class="resume-title">الدورات التدريبية</h3>
+            <h3 class="resume-title"><?php echo $sectionTitles['courses']; ?></h3>
             <?php
             foreach ($courses as $course) {
               echo '<div class="resume-item">
@@ -264,7 +234,7 @@
             ?>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">الخبرات</h3>
+            <h3 class="resume-title"><?php echo $sectionTitles['experience']; ?></h3>
             <?php foreach ($expersinces as $item) {
               echo '<div class="resume-item">
                             <h4>' . $item["location"] . '</h4>
@@ -290,16 +260,14 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>الأعمال</h2>
-          <p>عينة من الأعمال الموثقة لتعكس جودة العمل و الدقة بالتنفيذ و الأسس المتبعة بالتخطيط <br>
-
-          </p>
+          <h2><?php echo $sectionTitles['portfolio']; ?></h2>
+          <p><?php echo $sectionDescriptions['portfolio']; ?></p>
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">الكل</li>
+              <li data-filter="*" class="filter-active"><?php echo $portfolioLabels['all']; ?></li>
               <?php foreach ($Cats as $cat => $catname) { 
               echo "<li data-filter='.filter-".$catname["en"]."'>".$catname["dis"]."</li>";
              } ?>
@@ -327,7 +295,7 @@
                   class="portfolio-lightbox" data-title="
                   <?php echo $item['S'] ?>"><i class="bi bi-zoom-in"></i>
                 </a>
-                <a href="portfolio-details.php?G=<?php echo $G; ?>" title="More Details"><i
+                <a href="portfolio-details.php?G=<?php echo $G; ?>" title="<?php echo $uiLabels['moreDetails']; ?>"><i
                     class="bx bx-link"></i></a>
               </div>
             </div>
@@ -345,7 +313,7 @@
     <section id="services" class="services">
       <div class="container">
         <div class="section-title">
-          <h2>معلومات عامة</h2>
+          <h2><?php echo $sectionTitles['services']; ?></h2>
           <p></p>
         </div>
         <div class="row">
@@ -373,8 +341,8 @@
     <section id="testimonials" class="testimonials section-bg">
       <div class="container">
         <div class="section-title">
-          <h2>الأهداف</h2>
-          <p>يعتبر تحقيق الأهداف هي الخطوة الأساسية لتحديد الخطوات التي يجب اتخاذها لتحقيق رؤيتي</p>
+          <h2><?php echo $sectionTitles['goals']; ?></h2>
+          <p><?php echo $sectionDescriptions['goals']; ?></p>
         </div>
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
