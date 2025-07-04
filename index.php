@@ -1,4 +1,4 @@
-<?php require_once("Data.php"); ?>
+<?php require_once "config.php"; require_once "user_data.php"; require_once "website_data.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
