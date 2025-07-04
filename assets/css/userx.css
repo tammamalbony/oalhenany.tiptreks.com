@@ -1,0 +1,32 @@
+#about span {
+    margin: 5px;
+}
+
+.testimonial-item p {
+    min-height: 300px;
+}
+
+
+
+/* ------------------------- Hero --------------------*/
+@media (max-width: 993px) {
+    #hero {
+        background: url('../../Pro/Hero3.jpg') top left;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 994px) {
+    #hero {
+        background: url('../../Pro/Hero.jpg') top left;
+        background-size: cover;
+    }
+}
+
+.resume-title {
+    color: #043042 !important;
+}
+
+.resume-item h4 {
+    color: var(--main-color) !important;
+}
