@@ -30,3 +30,9 @@
 .resume-item h4 {
     color: var(--main-color) !important;
 }
+
+#lang-switch button {
+    width: 45px;
+    height: 45px;
+    font-weight: bold;
+}

@@ -174,7 +174,7 @@ $value = reset($portfolioItems);
       foreach ($portfolioItems as $item) {
         if ($first == true) {
 
-          echo '<div class="portfolio-description"> <ul dir="rtl"  class="m-5">';
+          echo '<div class="portfolio-description"> <ul dir="' . ($lang === 'ar' ? 'rtl' : 'ltr') . '"  class="m-5">';
 
           foreach ($item['description'] as $dis) {
             echo "<li>$dis</li>";
@@ -206,7 +206,7 @@ $value = reset($portfolioItems);
             <div class="col-lg-4">
                 <div class="portfolio-info">
                     <h3>' . $item['SD'] . '</h3>
-                    <ul dir="rtl" >
+                    <ul dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>" >
                         <li><strong>' . langText($portfolioLabels['category']) . '</strong> : ' . $item['category'] . '</li>
                         <li><strong>' . langText($portfolioLabels['description']) . '</strong> : ' . $item['SD'] . '</li>
                         ';
@@ -243,6 +243,19 @@ $value = reset($portfolioItems);
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
+  <div id="lang-switch" class="position-fixed bottom-0 end-0 m-3">
+    <button class="btn btn-success rounded-circle" id="switch-lang-btn">
+      <?php echo $lang === 'ar' ? 'EN' : 'ع'; ?>
+    </button>
+  </div>
+  <script>
+    document.getElementById('switch-lang-btn').addEventListener('click', function () {
+      var newLang = '<?php echo $lang; ?>' === 'ar' ? 'en' : 'ar';
+      document.cookie = 'lang=' + newLang + '; path=/; max-age=31536000';
+      location.reload();
+    });
+  </script>
 
   <!-- Vendor JS Files -->
   <?php echo $end; ?>
