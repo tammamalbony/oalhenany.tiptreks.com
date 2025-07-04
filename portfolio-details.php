@@ -120,7 +120,7 @@ $value = reset($portfolioItems);
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang; ?>" dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>">
 
 <head>
   <?php echo $head; ?>
@@ -147,7 +147,7 @@ $value = reset($portfolioItems);
             <?php echo $Main[$G]['S']; ?>
           </h2>
           <ol>
-            <li><a href="index.php"><?php echo $uiLabels['home']; ?></a></li>
+            <li><a href="index.php"><?php echo langText($uiLabels['home']); ?></a></li>
             <li>
               <?php echo $Main[$G]['S']; ?>
             </li>
@@ -207,18 +207,18 @@ $value = reset($portfolioItems);
                 <div class="portfolio-info">
                     <h3>' . $item['SD'] . '</h3>
                     <ul dir="rtl" >
-                        <li><strong>' . $portfolioLabels['category'] . '</strong> : ' . $item['category'] . '</li>
-                        <li><strong>' . $portfolioLabels['description'] . '</strong> : ' . $item['SD'] . '</li>
+                        <li><strong>' . langText($portfolioLabels['category']) . '</strong> : ' . $item['category'] . '</li>
+                        <li><strong>' . langText($portfolioLabels['description']) . '</strong> : ' . $item['SD'] . '</li>
                         ';
         if (isset($statusTexts[$item['projectStatu']])) {
-          echo "<li><strong>" . $portfolioLabels['status'] . "</strong> : " . $statusTexts[$item['projectStatu']] . "</li>";
+          echo "<li><strong>" . langText($portfolioLabels['status']) . "</strong> : " . langText($statusTexts[$item['projectStatu']]) . "</li>";
         } else {
           if (isset($item['projectStatu']) && $item['projectStatu'] != "") {
-            echo "<li><strong>" . $portfolioLabels['status'] . "</strong> : " . $item['projectStatu'] . "</li>";
+          echo "<li><strong>" . langText($portfolioLabels['status']) . "</strong> : " . $item['projectStatu'] . "</li>";
           }
         }
         if (isset($item['area']) && $item['area'] != "") {
-          echo "<li><strong>" . $portfolioLabels['area'] . "</strong> : " . $item['area'] . "</li>";
+          echo "<li><strong>" . langText($portfolioLabels['area']) . "</strong> : " . $item['area'] . "</li>";
         }
         echo '      </ul>
                 </div>

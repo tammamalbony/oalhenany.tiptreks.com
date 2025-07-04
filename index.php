@@ -1,6 +1,6 @@
 <?php require_once "config.php"; require_once "user_data.php"; require_once "website_data.php"; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang; ?>" dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>">
 
 <head>
   <?php echo $head; ?>
@@ -15,8 +15,8 @@
   </header><!-- End Header -->
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center" style="">
-    <div class="hero-container" data-aos="fade-in" dir="rtl">
-      <h1><?php echo $names['ar']; ?></h1>
+    <div class="hero-container" data-aos="fade-in" dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>">
+      <h1><?php echo langText($names); ?></h1>
       <p>
         <span class="typed" dir="rtl" data-typed-items="<?php echo implode(' , ', $heroItems); ?>"></span>
       </p>
@@ -27,7 +27,7 @@
     <section id="about" class="about">
       <div class="container">
         <div class="section-title">
-          <h2><?php echo $sectionTitles['vision']; ?></h2>
+          <h2><?php echo langText($sectionTitles['vision']); ?></h2>
           <div dir="rtl">
             <?php foreach ($visionPoints as $v) { ?>
               <i class="bi bi-caret-left-fill text-success"></i><span> <?php echo $v; ?></span></br>
@@ -99,8 +99,8 @@
     <section id="facts" class="facts">
       <div class="container">
         <div class="section-title">
-          <h2><?php echo $sectionTitles['facts']; ?></h2>
-          <p><?php echo $sectionDescriptions['facts']; ?></p>
+          <h2><?php echo langText($sectionTitles['facts']); ?></h2>
+          <p><?php echo langText($sectionDescriptions['facts']); ?></p>
         </div>
         <div class="row no-gutters">
           <?php foreach ($counterData as $item) {
@@ -129,7 +129,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h2><?php echo $sectionTitles['skills']; ?></h2>
+                <h2><?php echo langText($sectionTitles['skills']); ?></h2>
               </div>
               <div class="col-md-8">
                 <ul dir="rtl">
@@ -184,7 +184,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h2><?php echo $sectionTitles['resume']; ?></h2>
+                <h2><?php echo langText($sectionTitles['resume']); ?></h2>
               </div>
               <div class="col-md-8">
                 <ul dir="rtl">
@@ -199,9 +199,9 @@
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title"><?php echo $sectionTitles['resumeSummary']; ?></h3>
+            <h3 class="resume-title"><?php echo langText($sectionTitles['resumeSummary']); ?></h3>
             <div class="resume-item pb-0">
-              <h4><?php echo $names['ar']; ?> </h4>
+              <h4><?php echo langText($names); ?> </h4>
               <p><em><?php echo $resumeNationality; ?></em></p>
               <ul>
                 <?php foreach ($resumeHighlights as $item) { ?>
@@ -210,7 +210,7 @@
               </ul>
             </div>
 
-            <h3 class="resume-title"><?php echo $sectionTitles['education']; ?></h3>
+            <h3 class="resume-title"><?php echo langText($sectionTitles['education']); ?></h3>
             <?php
             foreach ($education as $item) {
               echo '<div class="resume-item">
@@ -221,7 +221,7 @@
                     </div>';
             }
             ?>
-            <h3 class="resume-title"><?php echo $sectionTitles['courses']; ?></h3>
+            <h3 class="resume-title"><?php echo langText($sectionTitles['courses']); ?></h3>
             <?php
             foreach ($courses as $course) {
               echo '<div class="resume-item">
@@ -234,7 +234,7 @@
             ?>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title"><?php echo $sectionTitles['experience']; ?></h3>
+            <h3 class="resume-title"><?php echo langText($sectionTitles['experience']); ?></h3>
             <?php foreach ($expersinces as $item) {
               echo '<div class="resume-item">
                             <h4>' . $item["location"] . '</h4>
@@ -260,14 +260,14 @@
       <div class="container">
 
         <div class="section-title">
-          <h2><?php echo $sectionTitles['portfolio']; ?></h2>
-          <p><?php echo $sectionDescriptions['portfolio']; ?></p>
+          <h2><?php echo langText($sectionTitles['portfolio']); ?></h2>
+          <p><?php echo langText($sectionDescriptions['portfolio']); ?></p>
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active"><?php echo $portfolioLabels['all']; ?></li>
+              <li data-filter="*" class="filter-active"><?php echo langText($portfolioLabels['all']); ?></li>
               <?php foreach ($Cats as $cat => $catname) { 
               echo "<li data-filter='.filter-".$catname["en"]."'>".$catname["dis"]."</li>";
              } ?>
@@ -295,7 +295,7 @@
                   class="portfolio-lightbox" data-title="
                   <?php echo $item['S'] ?>"><i class="bi bi-zoom-in"></i>
                 </a>
-                <a href="portfolio-details.php?G=<?php echo $G; ?>" title="<?php echo $uiLabels['moreDetails']; ?>"><i
+                <a href="portfolio-details.php?G=<?php echo $G; ?>" title="<?php echo langText($uiLabels['moreDetails']); ?>"><i
                     class="bx bx-link"></i></a>
               </div>
             </div>
@@ -313,7 +313,7 @@
     <section id="services" class="services">
       <div class="container">
         <div class="section-title">
-          <h2><?php echo $sectionTitles['services']; ?></h2>
+          <h2><?php echo langText($sectionTitles['services']); ?></h2>
           <p></p>
         </div>
         <div class="row">
@@ -341,8 +341,8 @@
     <section id="testimonials" class="testimonials section-bg">
       <div class="container">
         <div class="section-title">
-          <h2><?php echo $sectionTitles['goals']; ?></h2>
-          <p><?php echo $sectionDescriptions['goals']; ?></p>
+          <h2><?php echo langText($sectionTitles['goals']); ?></h2>
+          <p><?php echo langText($sectionDescriptions['goals']); ?></p>
         </div>
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
