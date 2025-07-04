@@ -379,7 +379,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <div id="lang-switch" class="position-fixed bottom-0 <?php echo $lang === 'ar' ? 'start-0' : 'end-0'; ?> m-3">
+  <div id="lang-switch" class="position-fixed bottom-0 <?php echo $lang === 'ar' ? 'end-0' : 'start-0'; ?> m-3">
     <button class="btn btn-success rounded-circle lang-switch-btn" id="switch-lang-btn">
       <?php echo $lang === 'ar' ? 'EN' : 'ع'; ?>
     </button>

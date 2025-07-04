@@ -57,7 +57,7 @@ function buildNav($items, $name) {
         $first = false;
     }
     $switch = ($GLOBALS['lang'] === 'ar') ? 'EN' : 'ع';
-    $html .= '<li><button class="btn btn-success lang-switch-btn">'.$switch.'</button></li>';
+    $html .= '<li><a href="#" class="nav-link scrollto lang-switch-btn"><i class="bi bi-translate"></i> <span>'.$switch.'</span></a></li>';
     $html .= '</ul></nav><!-- .nav-menu --></div>';
     return $html;
 }
@@ -135,7 +135,7 @@ function addPortfolioItem($portfolioItems, $projectStatu, $roots)
 
     return $updatedPortfolioItems;
 }
-$description = implode(" ◦ ❖ ◦ ", $heroItems);
+$description = implode(" ◦ ❖ ◦ ", array_map('langText', $heroItems));
 $pageTitle = langText($names);
 $head = <<<HTML
 <meta charset="utf-8">
