@@ -141,9 +141,9 @@ $head         = <<<HTML
 <title>{$pageTitle}</title>
 <meta name="description" content="$description" />
 <meta property="og:title" content="{$pageTitle}" />
-<meta property="og:url" content="https://www.oalhenany.com/" />
+<meta property="og:url" content="https://oalhenany.tiptreks.com/" />
 <meta property="og:description" content="$description" />
-<meta property="og:image" content="https://oalhenany.com/assets/img/bg.png" />
+<meta property="og:image" content="https://oalhenany.tiptreks.com/assets/img/bg.png" />
 <link href="assets/img/favicon.png" rel="icon">
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
