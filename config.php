@@ -35,32 +35,33 @@ $statusTexts = [
 // Portfolio categories
 $Cats = [
     1 => [
-        'en' => '',
+        'en' => 'Work',
         'ar' => 'عمل',
-        'dis' => ['en' => '', 'ar' => 'أعمال'],
+        'dis' => ['en' => 'Works', 'ar' => 'أعمال'],
     ],
     2 => [
-        'en' => '',
+        'en' => 'Project',
         'ar' => 'مشروع',
-        'dis' => ['en' => '', 'ar' => 'مشاريع'],
+        'dis' => ['en' => 'Projects', 'ar' => 'مشاريع'],
     ],
     3 => [
-        'en' => '',
+        'en' => 'Course',
         'ar' => 'دورة',
-        'dis' => ['en' => '', 'ar' => 'دورات'],
+        'dis' => ['en' => 'Courses', 'ar' => 'دورات'],
     ],
     4 => [
-        'en' => '',
+        'en' => 'Event',
         'ar' => 'فعالية',
-        'dis' => ['en' => '', 'ar' => 'فعاليات'],
+        'dis' => ['en' => 'Events', 'ar' => 'فعاليات'],
     ],
 ];
+
 
 // Mapping used for Isotope filters
 $catFilters = [
     1 => 'work',
     2 => 'project',
     3 => 'course',
-    4 => 'view'
+    4 => 'event'
 ];
 ?>

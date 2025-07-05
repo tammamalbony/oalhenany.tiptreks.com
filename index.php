@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 text-right text-white bg" dir="rtl" id="About_Edu">
+          <div class="col-12 text-right text-white bg" <?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?> id="About_Edu">
             <style>
               #About_Edu h3,
               #About_Edu h4,
@@ -55,8 +55,8 @@
               <h4><i class="bi <?php echo $item['icon']; ?> mx-2 text-success"></i><?php echo langText($item['text']); ?></h4>
             <?php } ?>
           </div>
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="./Pro/profile.jpg" class="img-fluid" alt="">
+          <div class="col-lg-4 " data-aos="fade-right">
+            <img src="./Pro/me.jpeg" class="img-fluid me-image" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
 
@@ -296,7 +296,7 @@
                 </div>
               </div>
               <div class="portfolio-links ">
-                <a href="<?php echo $rootlink ."/". $item['I'] . " .jpg"; ?>" data-gallery="portfolioGallery"
+                <a href="<?php echo $rootlink ."/". $item['I'] . ".jpg"; ?>" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" data-title="
                   <?php echo langText($item['S']); ?>"><i class="bi bi-zoom-in"></i>
                 </a>

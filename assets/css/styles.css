@@ -174,8 +174,8 @@ h6 {
   display: flex;
   align-items: center;
   color: #a8a9b4;
-  padding: 12px 15px;
-  margin-bottom: 8px;
+  padding: 8px 16px;
+  margin-bottom: 0px;
   transition: 0.3s;
   font-size: 15px;
 }
@@ -184,6 +184,7 @@ h6 {
 .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
+  padding-left: 8px;
   color: #6f7180;
 }
 
@@ -271,13 +272,15 @@ h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
+  /* max-width: 60vw; */
   font-family: "Cairo", sans-serif;
 }
 
 #hero p span {
   color: #fff;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   letter-spacing: 1px;
+  line-height: 2;
   border-bottom: 3px solid var(--main-color);
 }
 
@@ -352,6 +355,7 @@ section {
 .about .content ul {
   list-style: none;
   padding: 0;
+  padding-top: 12px;
 }
 
 .about .content ul li {
@@ -655,7 +659,7 @@ section {
 
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+  box-shadow: 9px 6px 30px rgba(5, 13, 24, 0.08);
 }
 
 .portfolio-details .portfolio-info h3 {

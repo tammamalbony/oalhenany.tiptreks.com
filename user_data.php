@@ -16,22 +16,54 @@ $footer_data = [
 ];
 
 $names = [
-    'ar' => 'عمران الحيناني',
-    'en' => 'Omran Al Henany'
+    'ar' => 'د. عمران الحيناني',
+    'en' => 'Dr. Omran Al Henany'
 ];
 
+
 $heroItems = [
-    ['en' => 'Agricultural Engineer', 'ar' => 'مهندس زراعي'],
+    [
+        'en' => 'Doctorate in Agricultural Engineering 
+        <br> 
+        in the Department of Horticultural Sciences,
+        <br>
+         specializing in the planning and design of urban green spaces
+         <br>
+          using GIS applications',
+        'ar' => 'دكتوراه في الهندسة الزراعية
+                <br> 
+                في قسم علوم البستنة 
+                <br> 
+                باختصاص تخطيط و تصميم المناطق الخضراء في المدن
+                <br>
+                باستخدام تطبيقات GIS'
+    ],
     ['en' => 'Master’s Degree in Garden Design and Landscaping', 'ar' => 'ماجستير في تصميم وتنسيق الحدائق'],
-    ['en' => 'Doctorate in Public Site Planning and Design', 'ar' => 'دكتوراه في تخطيط و تصميم المواقع العامة']
+    [
+        'en' => 'Doctor Engineer',
+        'ar' => 'الدكتور المهندس'
+    ]
 ];
 
 $visionPoints = [
-    ['en' => 'Constantly striving to develop new techniques and methods for designing and implementing sustainable agricultural and landscape projects that improve quality of life in cities and provide a healthy and beautiful environment for local communities. I also aim to establish international standards for the design and implementation of sustainable agricultural projects.', 'ar' => 'السعي الدائم لتطوير تقنيات وأساليب جديدة لتصميم وتنفيذ المشاريع الزراعية والمناظر الطبيعية المستدامة التي تحسن جودة الحياة في المدن وتوفر بيئة صحية وجميلة للمجتمعات المحلية. كما أريد تحديد المعايير الدولية لتصميم وتنفيذ المشاريع الزراعية المستدامة'],
-    ['en' => 'And to develop my own system for training professionals in this field and providing a work environment that encourages creativity and innovation.', 'ar' => 'وتطوير نظامي الخاص لتدريب المهنيين في هذا المجال وتوفير بيئة عمل محفزة للإبداع والإبتكار.'],
-    ['en' => 'I seek to improve the quality of life for local communities and raise awareness of the importance of sustainable agriculture and landscaping in cities.', 'ar' => 'أسعى لتحسين جودة الحياة للمجتمعات المحلية ونشر الوعي بأهمية الزراعة المستدامة والمناظر الطبيعية في المدن .'],
-    ['en' => 'To innovate modern agricultural systems that reduce costs and preserve earth resources. I want to establish proper guidelines for designing all landscape sites, using the appropriate plants for each, and the most suitable irrigation methods to minimize maintenance costs while enhancing their aesthetic and environmental benefits.', 'ar' => 'ابتكار نظم زراعية حديثة توفر التكاليف وتحافظ على موارد الأرض. أريد الوصول إلى وضع قواعد صحيحة لتصميم كافة مواقع اللاندسكيب واستخدام النباتات المناسبة لكل منها وطرق الري الأنسب لتوفير تكاليف الصيانة الباهظة وزيادة الجمالية والفائدة البيئية منها.']
+    [
+        'en' => 'Enhancing landscape design and maintenance through innovative solutions focused on environmental sustainability.',
+        'ar' => 'تعزيز تصميم وصيانة اللاندسكيب باستخدام حلول مبتكرة تركز على الاستدامة البيئية.'
+    ],
+    [
+        'en' => 'Applying human-centered design standards to improve the quality of urban life and create responsive, eco-friendly spaces.',
+        'ar' => 'تطبيق معايير التصميم المتمركز حول الإنسان لتحسين جودة الحياة الحضرية وخلق مساحات مستجيبة وصديقة للبيئة.'
+    ],
+    [
+        'en' => 'Empowering communities by providing advanced services in Geographic Information Systems (GIS) to support sustainable landscape design and environmental conservation.',
+        'ar' => 'تمكين المجتمعات من خلال تقديم خدمات متطورة في نظم المعلومات الجغرافية (GIS) لدعم تصميم لاندسكيب مستدام والحفاظ على البيئة.'
+    ],
+    [
+        'en' => 'Developing advanced landscape project management systems and optimizing the use of natural and human resources in maintaining parks and recreational facilities within smart cities.',
+        'ar' => 'تطوير أنظمة إدارة مشاريع اللاندسكيب المتقدمة والاستثمار الأمثل للموارد الطبيعية والبشرية في صيانة وإدارة الحدائق والمرافق الترفيهية ضمن المدن الذكية.'
+    ],
 ];
+
 
 $aboutHighlights = [
     ['en' => 'Trainer in several Syrian governorates and in the United Arab Emirates (Dubai)', 'ar' => 'مدرب في عدة محافظات سورية وفي الإمارات العربية المتحدة ( دبي)'],
@@ -40,8 +72,8 @@ $aboutHighlights = [
 ];
 
 $contactInfoLeft = [
-    ["icon" => "bi-wifi",      "label" => ['en' => 'Website:',                   'ar' => "الموقع :"],          "href" => "http://oalhenany.com",         "text" => "www.oalhenany.com"],
-    ["icon" => "bi-whatsapp",  "label" => ['en' => 'WhatsApp:',                 'ar' => "واتس أب :"],         "href" => "https://wa.me/971581524939",  "text" => "+971581524939", "ltr" => true],
+    ["icon" => "bi-wifi",      "label" => ['en' => 'Website:',                   'ar' => "الموقع :"],          "href" => "https://oalhenany.tiptreks.com/",         "text" => "oalhenany"],
+    ["icon" => "bi-whatsapp",  "label" => ['en' => 'WhatsApp:',                 'ar' => "واتس أب :"],         "href" => "https://wa.me/963994763404",  "text" => "+963994763404", "ltr" => true],
     ["icon" => "bi-telephone", "label" => ['en' => 'Mobile:',                   'ar' => "الموبايل :"],        "href" => "tel:00963994763404",          "text" => "+963994763404", "ltr" => true],
     ["icon" => "bi-map",       "label" => ['en' => 'Residence:',                'ar' => "الإقامة :"],         "text" => "Syria, Damascus"],
     ["icon" => "bi-translate", "label" => ['en' => 'Arabic Language:',          'ar' => "اللغة العربية :"],    "text" => "My native language"]
@@ -73,6 +105,10 @@ $resumeIntroPoints = [
 ];
 
 $resumeHighlights = [
+    [
+        'en' => 'Doctorate in Agricultural Engineering in the Department of Horticultural Sciences, specializing in the planning and design of urban green spaces using GIS applications',
+        'ar' => 'دكتوراه في الهندسة الزراعية في قسم علوم البستنة باختصاص تخطيط و تصميم المناطق الخضراء في المدن باستخدام تطبيقات GIS'
+    ],
     ['en' => 'Master’s in Garden Design',                                         'ar' => 'ماجستير في تصميم الحدائق'],
     ['en' => 'Certified Trainer',                                                 'ar' => 'مدرب معتمد '],
     ['en' => 'Agent of Al-Yousser Urban Advancement Company in As-Suwayda',      'ar' => 'وكيل شركة اليسر للإرتقاء العمراني في السويداء'],
@@ -329,45 +365,45 @@ $all = [
             'S' => ['en' => 'Photos of participation in the Flower Exhibition', 'ar' => 'صور المشاركة بمعرض الزهور']
         ]
     ]
-]; 
+];
 
 $Main = [
-    3  => ["S" => $all['2']['1']['S'],   "T" => "project", "I" => "2/1/A/".$im."(6)"],
-    4  => ["S" => $all['2']['2']['S'],   "T" => "project", "I" => "2/2/1/M/".$im."(1)"],
-    5  => ["S" => $all['2']['3']['S'],   "T" => "project", "I" => "2/3/W/".$im."(3)"],
-    6  => ["S" => $all['2']['4']['S'],   "T" => "project", "I" => "2/4/A/".$im."(3)"],
-    7  => ["S" => $all['2']['5']['S'],   "T" => "project", "I" => "2/5/A/".$im."(8)"],
-    8  => ["S" => $all['2']['6']['S'],   "T" => "project", "I" => "2/6/".$im."(2)"],
-    9  => ["S" => $all['2']['7']['S'],   "T" => "project", "I" => "2/7/2/A/".$im."(3)"],
-    10 => ["S" => $all['2']['8']['S'],   "T" => "project", "I" => "2/8/A/".$im."(4)"],
-    11 => ["S" => $all['2']['9']['S'],   "T" => "project", "I" => "2/9/A/".$im."(2)"],
-    12 => ["S" => $all['2']['10']['S'],  "T" => "project", "I" => "2/10/A/".$im."(8)"],
-    13 => ["S" => $all['2']['11']['S'],  "T" => "project", "I" => "2/11/A/".$im."(1)"],
-    14 => ["S" => $all['2']['12']['S'],  "T" => "project", "I" => "2/12/".$im."(2)"],
-    15 => ["S" => $all['2']['13']['S'],  "T" => "project", "I" => "2/13/D/".$im."(1)"],
-    16 => ["S" => $all['2']['14']['S'],  "T" => "project", "I" => "2/14/A/".$im."(2)"],
-    17 => ["S" => $all['2']['15']['S'],  "T" => "project", "I" => "2/15/D/".$im."(1)"],
-    18 => ["S" => $all['2']['16']['S'],  "T" => "project", "I" => "2/16/D/".$im."(1)"],
-    19 => ["S" => $all['2']['17']['S'],  "T" => "project", "I" => "2/17/".$im."(3)"],
-    20 => ["S" => $all['3']['1']['S'],   "T" => "course",  "I" => "3/1/".$im."(1)"],
-    1  => ["S" => $all['1']['1']['S'],   "T" => "work",    "I" => "1/1/".$im."(3)"],
-    2  => ["S" => $all['1']['2']['S'],   "T" => "work",    "I" => "1/2/".$im."(14)"],
-    21 => ["S" => $all['3']['2']['S'],   "T" => "course",  "I" => "3/2/".$im."(4)"],
-    22 => ["S" => $all['3']['3']['S'],   "T" => "course",  "I" => "3/3/".$im."(1)"],
-    23 => ["S" => $all['3']['4']['S'],   "T" => "course",  "I" => "3/4/".$im."(5)"],
-    24 => ["S" => $all['3']['5']['S'],   "T" => "course",  "I" => "3/5/".$im."(21)"],
-    25 => ["S" => $all['3']['6']['S'],   "T" => "course",  "I" => "3/6/".$im."(1)"],
-    26 => ["S" => $all['3']['7']['S'],   "T" => "course",  "I" => "3/7/".$im."(2)"],
-    27 => ["S" => $all['4']['1']['S'],   "T" => "View",    "I" => "4/1/".$im."(3)"],
-    28 => ["S" => $all['4']['2']['S'],   "T" => "View",    "I" => "4/2/".$im."(4)"],
-    29 => ["S" => $all['4']['3']['S'],   "T" => "View",    "I" => "4/3/".$im."(2)"],
-    30 => ["S" => $all['4']['4']['S'],   "T" => "View",    "I" => "4/4/".$im."(3)"]
+    3  => ["S" => $all['2']['1']['S'],   "T" => "project", "I" => "2/1/A/" . $im . "(6)"],
+    4  => ["S" => $all['2']['2']['S'],   "T" => "project", "I" => "2/2/1/M/" . $im . "(1)"],
+    5  => ["S" => $all['2']['3']['S'],   "T" => "project", "I" => "2/3/W/" . $im . "(3)"],
+    6  => ["S" => $all['2']['4']['S'],   "T" => "project", "I" => "2/4/A/" . $im . "(3)"],
+    7  => ["S" => $all['2']['5']['S'],   "T" => "project", "I" => "2/5/A/" . $im . "(8)"],
+    8  => ["S" => $all['2']['6']['S'],   "T" => "project", "I" => "2/6/" . $im . "(2)"],
+    9  => ["S" => $all['2']['7']['S'],   "T" => "project", "I" => "2/7/2/A/" . $im . "(3)"],
+    10 => ["S" => $all['2']['8']['S'],   "T" => "project", "I" => "2/8/A/" . $im . "(4)"],
+    11 => ["S" => $all['2']['9']['S'],   "T" => "project", "I" => "2/9/A/" . $im . "(2)"],
+    12 => ["S" => $all['2']['10']['S'],  "T" => "project", "I" => "2/10/A/" . $im . "(8)"],
+    13 => ["S" => $all['2']['11']['S'],  "T" => "project", "I" => "2/11/A/" . $im . "(1)"],
+    14 => ["S" => $all['2']['12']['S'],  "T" => "project", "I" => "2/12/" . $im . "(2)"],
+    15 => ["S" => $all['2']['13']['S'],  "T" => "project", "I" => "2/13/D/" . $im . "(1)"],
+    16 => ["S" => $all['2']['14']['S'],  "T" => "project", "I" => "2/14/A/" . $im . "(2)"],
+    17 => ["S" => $all['2']['15']['S'],  "T" => "project", "I" => "2/15/D/" . $im . "(1)"],
+    18 => ["S" => $all['2']['16']['S'],  "T" => "project", "I" => "2/16/D/" . $im . "(1)"],
+    19 => ["S" => $all['2']['17']['S'],  "T" => "project", "I" => "2/17/" . $im . "(3)"],
+    20 => ["S" => $all['3']['1']['S'],   "T" => "course",  "I" => "3/1/" . $im . "(1)"],
+    1  => ["S" => $all['1']['1']['S'],   "T" => "work",    "I" => "1/1/" . $im . "(3)"],
+    2  => ["S" => $all['1']['2']['S'],   "T" => "work",    "I" => "1/2/" . $im . "(14)"],
+    21 => ["S" => $all['3']['2']['S'],   "T" => "course",  "I" => "3/2/" . $im . "(4)"],
+    22 => ["S" => $all['3']['3']['S'],   "T" => "course",  "I" => "3/3/" . $im . "(1)"],
+    23 => ["S" => $all['3']['4']['S'],   "T" => "course",  "I" => "3/4/" . $im . "(5)"],
+    24 => ["S" => $all['3']['5']['S'],   "T" => "course",  "I" => "3/5/" . $im . "(21)"],
+    25 => ["S" => $all['3']['6']['S'],   "T" => "course",  "I" => "3/6/" . $im . "(1)"],
+    26 => ["S" => $all['3']['7']['S'],   "T" => "course",  "I" => "3/7/" . $im . "(2)"],
+    27 => ["S" => $all['4']['1']['S'],   "T" => "event",    "I" => "4/1/" . $im . "(3)"],
+    28 => ["S" => $all['4']['2']['S'],   "T" => "event",    "I" => "4/2/" . $im . "(4)"],
+    29 => ["S" => $all['4']['3']['S'],   "T" => "event",    "I" => "4/3/" . $im . "(2)"],
+    30 => ["S" => $all['4']['4']['S'],   "T" => "event",    "I" => "4/4/" . $im . "(3)"]
 ];
 
 $education = [
     'D' => [
         'title'       => ['en' => 'Doctorate in Horticultural Sciences', 'ar' => 'دكتوراه في علوم البستنة'],
-        'year'        => ['en' => '2019 - Present',                  'ar' => 'الأن - 2019'],
+        'year'        => '2025 - 2019',
         'university'  => ['en' => 'Faculty of Agricultural Engineering - University of Damascus', 'ar' => 'كلية الهندسة الزراعية - جامعة دمشق'],
         'description' => ['en' => 'To study green areas within residential neighborhoods using Geographic Information Systems to improve their urban environment.', 'ar' => 'لدراسة المناطق الخضراء ضمن الاحياء السكنية باستخدام نظم المعلومات الجغرافية لتحسين بيئتها العمرانية']
     ],
@@ -448,93 +484,97 @@ $skills = [
 ];
 
 
-$expersinces = 
-[
+$expersinces =
     [
-        'location'    => ['en' => 'United Arab Emirates - Dubai', 'ar' => 'الإمارات العربية المتحدة - دبي'],
-        'date'        => ['en' => 'March 2023 - Present',      'ar' => '3/2023 - الأن'],
-        'title'       => ['en' => 'Professional training for Dubai Municipality (Trainer)', 'ar' => 'التدريب الاحترافي لصالح بلدية دبي (مدرب)'],
-        'description' => [
-            ['en' => 'To develop work in the fields of landscape design', 'ar' => 'لتطوير العمل ضمن مجالات تصميم اللاندسكيب'],
-            ['en' => 'Agricultural maintenance work and the art of garden management', 'ar' => 'أعمال الصيانة الزراعية وفن إدارة الحدائق'],
-            ['en' => 'Environmental sustainability in gardens and green areas',         'ar' => 'الاستدامة البيئية في الحدائق والمناطق الخضراء'],
-            ['en' => 'Hydroponic projects with the latest engineering and technical technologies', 'ar' => 'مشاريع الزراعة المائية بأحدث التقنيات الهندسية والفنية']
+        [
+            'location'    => ['en' => 'United Arab Emirates - Dubai', 'ar' => 'الإمارات العربية المتحدة - دبي'],
+            'date'        => ['en' => 'March 2023 - Present',      'ar' => '3/2023 - الأن'],
+            'title'       => ['en' => 'Professional training for Dubai Municipality (Trainer)', 'ar' => 'التدريب الاحترافي لصالح بلدية دبي (مدرب)'],
+            'description' => [
+                ['en' => 'To develop work in the fields of landscape design', 'ar' => 'لتطوير العمل ضمن مجالات تصميم اللاندسكيب'],
+                ['en' => 'Agricultural maintenance work and the art of garden management', 'ar' => 'أعمال الصيانة الزراعية وفن إدارة الحدائق'],
+                ['en' => 'Environmental sustainability in gardens and green areas',         'ar' => 'الاستدامة البيئية في الحدائق والمناطق الخضراء'],
+                ['en' => 'Hydroponic projects with the latest engineering and technical technologies', 'ar' => 'مشاريع الزراعة المائية بأحدث التقنيات الهندسية والفنية']
+            ]
+        ],
+        [
+            'location'    => ['en' => 'The first course in Syria', 'ar' => 'الدورة الأولى في سورية'],
+            'date'        => ['en' => 'February 2019 - Present', 'ar' => '2/2019 - الأن'],
+            'title'       => ['en' => 'Founder and Trainer',      'ar' => 'مؤسس ومدرب'],
+            'description' => [
+                ['en' => 'Training agricultural engineers – graduates and students', 'ar' => 'تدريب المهندسين الزراعيين -الخريجين والطلاب'],
+                ['en' => 'Training those interested in garden landscaping',         'ar' => 'تدريب المهتمين بمجال تنسيق الحدائق'],
+                ['en' => 'Designing gardens, open sites, and all urban spaces using engineering software to produce professional landscape plans', 'ar' => 'تصميم الحدائق والمواقع المفتوحة وكافة الفراغات العمرانية باستخدام البرامج الهندسية لإخراج مخططات اللاندسكيب باحترافية عالية']
+            ]
+        ],
+        [
+            'location'    =>
+            [
+                'en' => 'Landscaping Office for the Design, Implementation, and Maintenance of All Landscaping Works',
+                'ar' => 'مكتب Landscaping لتصميم وتنفيذ وصيانة كافة أعمال اللاندسكيب'
+            ],
+            'date'        => ['en' => 'January 2017 - Present', 'ar' => '1/2017 - الأن'],
+            'title'       => ['en' => 'Office Manager',           'ar' => 'مدير المكتب'],
+            'description' => [
+                ['en' => 'I study and design landscape plans for all public and private gardens.', 'ar' => 'أقوم بدراسة وتصميم مخططات اللاندسكيب لكافة الحدائق العامة والخاصة.'],
+                ['en' => 'Design and implementation of several public garden sites and private gardens in Damascus and its countryside as well as in As-Suwayda.', 'ar' => 'تصميم وتنفيذ عدة مواقع عامة للحدائق وحدائق خاصة في دمشق وريفها وفي السويداء.'],
+                ['en' => 'Design of the garden for the Institute of Intellectual Development in As-Suwayda Governorate.', 'ar' => 'تصميم حديقة معهد التنمية الذهنية في محافظة السويداء.'],
+                ['en' => 'Working on designing and implementing the public site garden for the National Museum in As-Suwayda.', 'ar' => 'العمل على تصميم وتنفيذ حديقة الموقع العام للمتحف الوطني في السويداء.']
+            ]
+        ],
+        [
+            'location'    => ['en' => 'Presidency of Damascus University (Damascus, Syria)', 'ar' => 'رئاسة جامعة دمشق (دمشق , سوريا )'],
+            'date'        => ['en' => 'December 2015 - November 2024',             'ar' => '12/2015 - 12/2024'],
+            'title'       => ['en' => 'Engineer at the Directorate of Engineering Affairs', 'ar' => 'مهندس في مديرية الشؤون الهندسية'],
+            'description' => [
+                ['en' => 'I prepare garden plans for the university’s affiliated colleges.', 'ar' => 'أعد مخططات للحدائق في الكليات التابعة للجامعة'],
+                ['en' => 'Supervising gardens, monitoring them, and creating modern designs that suit the gardens and fulfill their purpose.', 'ar' => 'الإشراف على الحدائق ومتابعتها ووضع تصميمات حديثة تلائم الحدائق وتحقق غايتها'],
+                ['en' => 'Overseeing all agricultural and horticultural operations (pruning, fertilization, irrigation, spraying, cutting, and shaping plants).', 'ar' => 'الإشراف على كافة العمليات الزراعية والحدائقية ( تقليم – تسميد – ري – رش – قص وتشكيل النباتات )'],
+                ['en' => 'Providing maintenance programs, supervising implementation, and accepting gardens at the University of Damascus colleges.', 'ar' => 'تقديم برامج الصيانة والإشراف على التنفيذ واستلام الحدائق في كليات جامعة دمشق.']
+            ]
+        ],
+        [
+            'location'    => ['en' => 'Badar Agriculture and Trading Company (Latakia, Syria)', 'ar' => 'شركة بدار للزراعة والتجارة (اللاذقية، سوريا )'],
+            'date'        => ['en' => 'December 2017 - Present',                        'ar' => '12/2017 - الأن'],
+            'title'       => ['en' => 'Technical Engineer',                             'ar' => 'مهندس فني'],
+            'description' => [
+                ['en' => 'Studying hybrid vegetable varieties and testing them in southern Syria (Damascus, As-Suwayda, Quneitra).', 'ar' => 'بدراسة أصناف الخضار الهجينة واختبارها في المنطقة الجنوبية في سوريا (دمشق ، السويداء، القنيطرة)'],
+                ['en' => 'Identifying suitable varieties, giving them a commercial profile, and marketing them to engineers and agricultural centers.', 'ar' => 'تحديد الأصناف المناسبة و إعطاءها الطابع التجاري وتسويقها للمهندسين والمراكز الزراعية.'],
+                ['en' => 'Market study and results analysis.',               'ar' => 'دراسة السوق وتحليل النتائج'],
+                ['en' => 'Studying the characteristics of productive and marketable varieties and fertilizer specifications.', 'ar' => 'دراسة ومواصفات الأصناف الإنتاجية والتسويقية ومواصفات الأسمدة']
+            ]
+        ],
+        [
+            'location'    => ['en' => 'Kirby Company (Damascus, Syria)', 'ar' => 'شركة كيربي (دمشق ، سوريا )'],
+            'date'        => ['en' => 'March 2015 - June 2015',          'ar' => '3/2015 - 6/2015'],
+            'title'       => ['en' => 'Sales and Installation Engineer for Water Analysis Devices', 'ar' => 'مهندس مبيعات وتركيب أجهزة تحليل المياه'],
+            'description' => [
+                ['en' => 'Feasibility study of water analysis using specialized analysis devices.', 'ar' => 'دراسة جدوى تحليل المياه باستخدام أجهزة التحليل الخاصة'],
+                ['en' => 'Presenting device offers to clients and explaining device usage, connections, and home maintenance.', 'ar' => 'تقديم عروض للأجهزة للمستفيدين وشرح عن استخدام الجهاز وتوصيلاته وصيانته بالمنزل'],
+                ['en' => 'Achieved profits on the devices and a high sales rate.',              'ar' => 'حققت مرابح على الأجهزة ونسبة مبيعات كبيرة.']
+            ]
+        ],
+        [
+            'location'    => ['en' => 'Danish Refugee Council (DRC) (Damascus, Syria)', 'ar' => 'المجلس الدينماركي DRC (دمشق ، سوريا )'],
+            'date'        => ['en' => '2014 - 2015',                             'ar' => '2014 - 2015'],
+            'title'       => ['en' => 'Trainer',                                'ar' => 'مدرب'],
+            'description' => [
+                ['en' => 'Training locals on soilless agriculture.',                                        'ar' => 'تدريب الأهالي على الزراعة بدون تربة'],
+                ['en' => 'Training on rooftop hydroponic farming and its economical home use.',             'ar' => 'التدريب على زراعة الأسطح بالزراعة المائية وكيفية استخدامها بالمنازل اقتصادياً'],
+                ['en' => 'Decorating home balconies and how to care for home gardens.',                     'ar' => 'تزيين شرفات المنازل و وكيفية العناية بالحدائق المنزلية'],
+                ['en' => 'Care of medicinal plants and their home use at the Barzeh Housing branch.',       'ar' => 'العناية بالنباتات الطبية واستخدامها منزليا وذلك في فرع مساكن برزة']
+            ]
+        ],
+        [
+            'location'    => ['en' => 'Online Courses', 'ar' => 'دورات اون لاين'],
+            'date'        => ['en' => '2014 - 2018',  'ar' => '2014 - 2018'],
+            'title'       => ['en' => 'Trainer',        'ar' => 'مدرب'],
+            'description' => [
+                ['en' => 'Training interested individuals and technicians on professional oyster mushroom project management.', 'ar' => 'تدريب المهتمين والفنيين على إدارة مشاريع الفطر المحاري بشكل احترافي'],
+                ['en' => 'Training on proper cultivation and engineering care of the projects.',                            'ar' => 'التدريب على كيفية الزراعة الصحيحة والعناية بالمشاريع هندسياً']
+            ]
         ]
-    ],
-    [
-        'location'    => ['en' => 'The first course in Syria', 'ar' => 'الدورة الأولى في سورية'],
-        'date'        => ['en' => 'February 2019 - Present', 'ar' => '2/2019 - الأن'],
-        'title'       => ['en' => 'Founder and Trainer',      'ar' => 'مؤسس ومدرب'],
-        'description' => [
-            ['en' => 'Training agricultural engineers – graduates and students', 'ar' => 'تدريب المهندسين الزراعيين -الخريجين والطلاب'],
-            ['en' => 'Training those interested in garden landscaping',         'ar' => 'تدريب المهتمين بمجال تنسيق الحدائق'],
-            ['en' => 'Designing gardens, open sites, and all urban spaces using engineering software to produce professional landscape plans', 'ar' => 'تصميم الحدائق والمواقع المفتوحة وكافة الفراغات العمرانية باستخدام البرامج الهندسية لإخراج مخططات اللاندسكيب باحترافية عالية']
-        ]
-    ],
-    [
-        'location'    => ['en' => 'Engineering office for garden and irrigation network design', 'ar' => 'المكتب الهندسي لتصميم الحدائق وشبكات الري'],
-        'date'        => ['en' => 'January 2017 - Present', 'ar' => '1/2017 - الأن'],
-        'title'       => ['en' => 'Office Manager',           'ar' => 'مدير المكتب'],
-        'description' => [
-            ['en' => 'I study and design landscape plans for all public and private gardens.', 'ar' => 'أقوم بدراسة وتصميم مخططات اللاندسكيب لكافة الحدائق العامة والخاصة.'],
-            ['en' => 'Design and implementation of several public garden sites and private gardens in Damascus and its countryside as well as in As-Suwayda.', 'ar' => 'تصميم وتنفيذ عدة مواقع عامة للحدائق وحدائق خاصة في دمشق وريفها وفي السويداء.'],
-            ['en' => 'Design of the garden for the Institute of Intellectual Development in As-Suwayda Governorate.', 'ar' => 'تصميم حديقة معهد التنمية الذهنية في محافظة السويداء.'],
-            ['en' => 'Working on designing and implementing the public site garden for the National Museum in As-Suwayda.', 'ar' => 'العمل على تصميم وتنفيذ حديقة الموقع العام للمتحف الوطني في السويداء.']
-        ]
-    ],
-    [
-        'location'    => ['en' => 'Presidency of Damascus University (Damascus, Syria)', 'ar' => 'رئاسة جامعة دمشق (دمشق , سوريا )'],
-        'date'        => ['en' => 'December 2015 - September 2022',             'ar' => '12/2015 - 9/2022'],
-        'title'       => ['en' => 'Engineer at the Directorate of Engineering Affairs', 'ar' => 'مهندس في مديرية الشؤون الهندسية'],
-        'description' => [
-            ['en' => 'I prepare garden plans for the university’s affiliated colleges.', 'ar' => 'أعد مخططات للحدائق في الكليات التابعة للجامعة'],
-            ['en' => 'Supervising gardens, monitoring them, and creating modern designs that suit the gardens and fulfill their purpose.', 'ar' => 'الإشراف على الحدائق ومتابعتها ووضع تصميمات حديثة تلائم الحدائق وتحقق غايتها'],
-            ['en' => 'Overseeing all agricultural and horticultural operations (pruning, fertilization, irrigation, spraying, cutting, and shaping plants).', 'ar' => 'الإشراف على كافة العمليات الزراعية والحدائقية ( تقليم – تسميد – ري – رش – قص وتشكيل النباتات )'],
-            ['en' => 'Providing maintenance programs, supervising implementation, and accepting gardens at the University of Damascus colleges.', 'ar' => 'تقديم برامج الصيانة والإشراف على التنفيذ واستلام الحدائق في كليات جامعة دمشق.']
-        ]
-    ],
-    [
-        'location'    => ['en' => 'Badar Agriculture and Trading Company (Latakia, Syria)', 'ar' => 'شركة بدار للزراعة والتجارة (اللاذقية، سوريا )'],
-        'date'        => ['en' => 'December 2017 - Present',                        'ar' => '12/2017 - الأن'],
-        'title'       => ['en' => 'Technical Engineer',                             'ar' => 'مهندس فني'],
-        'description' => [
-            ['en' => 'Studying hybrid vegetable varieties and testing them in southern Syria (Damascus, As-Suwayda, Quneitra).', 'ar' => 'بدراسة أصناف الخضار الهجينة واختبارها في المنطقة الجنوبية في سوريا (دمشق ، السويداء، القنيطرة)'],
-            ['en' => 'Identifying suitable varieties, giving them a commercial profile, and marketing them to engineers and agricultural centers.', 'ar' => 'تحديد الأصناف المناسبة و إعطاءها الطابع التجاري وتسويقها للمهندسين والمراكز الزراعية.'],
-            ['en' => 'Market study and results analysis.',               'ar' => 'دراسة السوق وتحليل النتائج'],
-            ['en' => 'Studying the characteristics of productive and marketable varieties and fertilizer specifications.', 'ar' => 'دراسة ومواصفات الأصناف الإنتاجية والتسويقية ومواصفات الأسمدة']
-        ]
-    ],
-    [
-        'location'    => ['en' => 'Kirby Company (Damascus, Syria)', 'ar' => 'شركة كيربي (دمشق ، سوريا )'],
-        'date'        => ['en' => 'March 2015 - June 2015',          'ar' => '3/2015 - 6/2015'],
-        'title'       => ['en' => 'Sales and Installation Engineer for Water Analysis Devices', 'ar' => 'مهندس مبيعات وتركيب أجهزة تحليل المياه'],
-        'description' => [
-            ['en' => 'Feasibility study of water analysis using specialized analysis devices.', 'ar' => 'دراسة جدوى تحليل المياه باستخدام أجهزة التحليل الخاصة'],
-            ['en' => 'Presenting device offers to clients and explaining device usage, connections, and home maintenance.', 'ar' => 'تقديم عروض للأجهزة للمستفيدين وشرح عن استخدام الجهاز وتوصيلاته وصيانته بالمنزل'],
-            ['en' => 'Achieved profits on the devices and a high sales rate.',              'ar' => 'حققت مرابح على الأجهزة ونسبة مبيعات كبيرة.']
-        ]
-    ],
-    [
-        'location'    => ['en' => 'Danish Refugee Council (DRC) (Damascus, Syria)', 'ar' => 'المجلس الدينماركي DRC (دمشق ، سوريا )'],
-        'date'        => ['en' => '2014 - 2015',                             'ar' => '2014 - 2015'],
-        'title'       => ['en' => 'Trainer',                                'ar' => 'مدرب'],
-        'description' => [
-            ['en' => 'Training locals on soilless agriculture.',                                        'ar' => 'تدريب الأهالي على الزراعة بدون تربة'],
-            ['en' => 'Training on rooftop hydroponic farming and its economical home use.',             'ar' => 'التدريب على زراعة الأسطح بالزراعة المائية وكيفية استخدامها بالمنازل اقتصادياً'],
-            ['en' => 'Decorating home balconies and how to care for home gardens.',                     'ar' => 'تزيين شرفات المنازل و وكيفية العناية بالحدائق المنزلية'],
-            ['en' => 'Care of medicinal plants and their home use at the Barzeh Housing branch.',       'ar' => 'العناية بالنباتات الطبية واستخدامها منزليا وذلك في فرع مساكن برزة']
-        ]
-    ],
-    [
-        'location'    => ['en' => 'Online Courses', 'ar' => 'دورات اون لاين'],
-        'date'        => ['en' => '2014 - 2018',  'ar' => '2014 - 2018'],
-        'title'       => ['en' => 'Trainer',        'ar' => 'مدرب'],
-        'description' => [
-            ['en' => 'Training interested individuals and technicians on professional oyster mushroom project management.', 'ar' => 'تدريب المهتمين والفنيين على إدارة مشاريع الفطر المحاري بشكل احترافي'],
-            ['en' => 'Training on proper cultivation and engineering care of the projects.',                            'ar' => 'التدريب على كيفية الزراعة الصحيحة والعناية بالمشاريع هندسياً']
-        ]
-    ]
-];
+    ];
 $services = [
     [
         'icon'        => 'bi-briefcase',
@@ -645,5 +685,3 @@ $counterData = [
         "label" => ['en' => 'Hours of Theoretical and Practical Training', 'ar' => 'ساعات تدريب نظرية و عملية'],
     ],
 ];
-
-?>

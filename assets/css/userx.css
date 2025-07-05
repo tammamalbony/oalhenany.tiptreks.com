@@ -7,7 +7,18 @@
 }
 
 
-
+.me-image{
+    
+border: solid 2px;
+    
+margin-top: 12px;
+    
+border-color: #0a892e;
+    
+border-radius: 12px;
+    
+filter: drop-shadow(2px 2px 5px #0a892e);
+}
 /* ------------------------- Hero --------------------*/
 @media (max-width: 993px) {
     #hero {
@@ -39,4 +50,20 @@
 
 #lang-switch {
     z-index: 997;
+}
+
+footer h6 {
+    line-height: 21px;
+    font-size: medium;
+}
+
+.portfolio-details-slider >div >div{
+    border: solid 2px #0a892e;
+    border-radius: 11px;
+    background-image: linear-gradient(45deg, #0a892e, transparent);
+}
+
+#About_Edu h3, #About_Edu h4, #About_Edu h5 {
+    font-size:large;
+    padding:8px;
 }

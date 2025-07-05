@@ -154,7 +154,7 @@ $head         = <<<HTML
 <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" >
-<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/styles.css" rel="stylesheet">
 <link href="assets/css/userx.css" rel="stylesheet">
 HTML;
 
