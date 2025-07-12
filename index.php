@@ -1,4 +1,6 @@
-<?php require_once "config.php"; require_once "user_data.php"; require_once "website_data.php"; ?>
+<?php require_once "config.php";
+require_once "user_data.php";
+require_once "website_data.php"; ?>
 <!DOCTYPE html>
 <html lang="<?php echo $lang; ?>" dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>">
 
@@ -70,9 +72,9 @@
                 <ul dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>">
                   <?php foreach ($contactInfoLeft as $info) { ?>
                     <li><i class="bi <?php echo $info['icon']; ?>"></i> <strong><?php echo langText($info['label']); ?></strong>
-                      <?php if(isset($info['href'])) echo '<a href="'.$info['href'].'">'; ?>
-                      <span<?php if(isset($info['ltr'])) echo ' dir="ltr"'; ?>><?php echo $info['text']; ?></span>
-                      <?php if(isset($info['href'])) echo '</a>'; ?>
+                      <?php if (isset($info['href'])) echo '<a href="' . $info['href'] . '">'; ?>
+                      <span<?php if (isset($info['ltr'])) echo ' dir="ltr"'; ?>><?php echo $info['text']; ?></span>
+                        <?php if (isset($info['href'])) echo '</a>'; ?>
                     </li>
                   <?php } ?>
                 </ul>
@@ -218,11 +220,11 @@
             <?php
             foreach ($education as $item) {
               echo '<div class="resume-item">'
-                    . '<h4>' . langText($item["title"]) . '</h4>'
-                    . '<h5>' . $item["year"] . '</h5>'
-                    . '<p><em>' . langText($item["university"]) . '</em></p>'
-                    . '<p>' . langText($item["description"]) . '</p>'
-                  . '</div>';
+                . '<h4>' . langText($item["title"]) . '</h4>'
+                . '<h5>' . $item["year"] . '</h5>'
+                . '<p><em>' . langText($item["university"]) . '</em></p>'
+                . '<p>' . langText($item["description"]) . '</p>'
+                . '</div>';
             }
             ?>
             <h3 class="resume-title"><?php echo langText($sectionTitles['courses']); ?></h3>
@@ -230,11 +232,11 @@
             foreach ($courses as $course) {
               $desc = is_array($course["description"]) ? langText($course["description"]) : $course["description"];
               echo '<div class="resume-item">'
-                      . '<h4>' . langText($course["title"]) . '</h4>'
-                      . '<h5>' . $course["date"] . '</h5>'
-                      . '<p><em>' . langText($course["organization"]) . '</em></p>'
-                      . '<p>' . $desc . '</p>'
-                    . '</div>';
+                . '<h4>' . langText($course["title"]) . '</h4>'
+                . '<h5>' . $course["date"] . '</h5>'
+                . '<p><em>' . langText($course["organization"]) . '</em></p>'
+                . '<p>' . $desc . '</p>'
+                . '</div>';
             }
             ?>
           </div>
@@ -242,9 +244,9 @@
             <h3 class="resume-title"><?php echo langText($sectionTitles['experience']); ?></h3>
             <?php foreach ($expersinces as $item) {
               echo '<div class="resume-item">'
-                    . '<h4>' . langText($item["location"]) . '</h4>'
-                    . '<h5>' . langText($item["date"]) . '</h5>'
-                    . '<p><em>' . langText($item["title"]) . '</em></p>';
+                . '<h4>' . langText($item["location"]) . '</h4>'
+                . '<h5>' . langText($item["date"]) . '</h5>'
+                . '<p><em>' . langText($item["title"]) . '</em></p>';
               if (!empty($item["description"])) {
                 echo '<ul dir="' . ($lang === 'ar' ? 'rtl' : 'ltr') . '">';
                 foreach ($item["description"] as $desc) {
@@ -283,28 +285,35 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
           <?php foreach ($Main as $G => $item) { ?>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-<?php echo $item['T'] ?>">
-            <div class="portfolio-wrap">
-              <div class="card mb-3">
-                <img src="<?php echo $rootlink ."/". $item['I'] . ".jpg" ; ?>" class="img-fluid" alt="">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <?php echo langText($item['S']); ?>
-                  </h5>
-                  <p class="card-text"></p>
-                  <p class="card-text"><small class="text-body-secondary"></small></p>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-<?php echo $item['T'] ?>">
+              <div class="portfolio-wrap">
+                <a href="portfolio-details.php?G=<?php echo $G; ?>" class="details-btn"><i class="bi bi-info-circle"></i> <?php echo langText($uiLabels['moreDetails']); ?></a>
+                <div class="card mb-3">
+                  <img src="<?php echo $rootlink . "/" . $item['I'] . ".jpg"; ?>" class="img-fluid" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <?php echo langText($item['S']); ?>
+                    </h5>
+                    <p class="card-text"></p>
+                    <p class="card-text"><small class="text-body-secondary"></small></p>
+                  </div>
+                </div>
+                <div class="portfolio-links ">
+                  <a
+                    href="<?= $rootlink . "/" . $item['I'] ?>.jpg"
+                    class="portfolio-lightbox"
+                    data-gallery="portfolioGallery"
+                    data-title='
+            <h4><?= langText($item['S']); ?></h4>
+            <a href="portfolio-details.php?G=<?= $G; ?>"
+               class="btn btn-sm btn-success mt-2">
+              <?= langText($uiLabels['moreDetails']); ?>
+            </a>'><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.php?G=<?php echo $G; ?>" title="<?php echo langText($uiLabels['moreDetails']); ?>"><i
+                      class="bx bx-link"></i></a>
                 </div>
               </div>
-              <div class="portfolio-links ">
-                <a href="<?php echo $rootlink ."/". $item['I'] . ".jpg"; ?>" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" data-title="
-                  <?php echo langText($item['S']); ?>"><i class="bi bi-zoom-in"></i>
-                </a>
-                <a href="portfolio-details.php?G=<?php echo $G; ?>" title="<?php echo langText($uiLabels['moreDetails']); ?>"><i
-                    class="bx bx-link"></i></a>
-              </div>
             </div>
-          </div>
           <?php
           } ?>
 
@@ -324,16 +333,16 @@
         <div class="row">
           <?php
           foreach ($services as $service):
-            ?>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi <?php echo $service['icon']; ?>"></i></div>
-            <h4 class="title"><a href="<?php echo $service['link']; ?>">
-                <?php echo langText($service['title']); ?>
-              </a></h4>
-            <p class="description">
-              <?php echo langText($service['description']); ?>
-            </p>
-          </div>
+          ?>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi <?php echo $service['icon']; ?>"></i></div>
+              <h4 class="title"><a href="<?php echo $service['link']; ?>">
+                  <?php echo langText($service['title']); ?>
+                </a></h4>
+              <p class="description">
+                <?php echo langText($service['description']); ?>
+              </p>
+            </div>
           <?php endforeach; ?>
         </div>
       </div>
@@ -352,22 +361,22 @@
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
             <?php foreach ($Goals as $Goal): ?>
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  <?php echo langText($Goal['quote']); ?>
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <i class="bi bi-<?php echo $Goal['circle']; ?>-circle"></i>
-                <h3>
-                  <?php echo langText($Goal['title']); ?>
-                </h3>
-                <h4>
-                  <?php echo langText($Goal['subtitle']); ?>
-                </h4>
-              </div>
-            </div><!-- End testimonial item -->
+              <div class="swiper-slide">
+                <div class="testimonial-item" data-aos="fade-up">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    <?php echo langText($Goal['quote']); ?>
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <i class="bi bi-<?php echo $Goal['circle']; ?>-circle"></i>
+                  <h3>
+                    <?php echo langText($Goal['title']); ?>
+                  </h3>
+                  <h4>
+                    <?php echo langText($Goal['subtitle']); ?>
+                  </h4>
+                </div>
+              </div><!-- End testimonial item -->
             <?php endforeach; ?>
           </div>
           <div class="swiper-pagination"></div>
@@ -390,8 +399,8 @@
     </button>
   </div>
   <script>
-    document.querySelectorAll('.lang-switch-btn').forEach(function(btn){
-      btn.addEventListener('click', function(){
+    document.querySelectorAll('.lang-switch-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
         var newLang = '<?php echo $lang; ?>' === 'ar' ? 'en' : 'ar';
         document.cookie = 'lang=' + newLang + '; path=/; max-age=31536000';
         location.reload();

@@ -790,13 +790,13 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left {
   display: inline-block;
-  left: -5px;
+  /* left: -5px; */
   position: relative;
 }
 
 .testimonials .testimonial-item .quote-icon-right {
   display: inline-block;
-  right: -5px;
+  /* right: -5px; */
   position: relative;
   top: 10px;
 }
