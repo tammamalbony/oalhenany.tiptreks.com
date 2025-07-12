@@ -398,6 +398,11 @@ require_once "website_data.php"; ?>
       <?php echo $lang === 'ar' ? 'EN' : 'ع'; ?>
     </button>
   </div>
+  <div id="theme-switch" class="position-fixed bottom-0 <?php echo $lang === 'ar' ? 'end-0' : 'start-0'; ?> m-3">
+    <button class="btn btn-secondary rounded-circle" id="theme-toggle-btn" title="Toggle theme">
+      <i class="bi bi-moon"></i>
+    </button>
+  </div>
   <script>
     document.querySelectorAll('.lang-switch-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
