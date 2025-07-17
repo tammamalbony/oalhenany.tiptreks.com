@@ -156,6 +156,7 @@ $head         = <<<HTML
 <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" >
 <link href="assets/css/styles.css" rel="stylesheet">
 <link href="assets/css/userx.css" rel="stylesheet">
+<link href="assets/css/theme.css" rel="stylesheet">
 HTML;
 
 $end = '
@@ -170,6 +171,7 @@ $end = '
 <script src="./assets/vendor/typed.js/typed.umd.js"></script>
 <script src="./assets/vendor/waypoints/noframework.waypoints.js"></script>
 <script src="./assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/js/theme-toggle.js"></script>
 <script src="assets/js/mainx.js"></script>';
 
 $footer = '<div class="container">'
